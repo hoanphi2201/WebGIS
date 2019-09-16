@@ -1,0 +1,71 @@
+
+.ol-popup {
+  position: absolute;
+  background-color: white;
+  -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+  padding: 15px;
+  border: 1px solid #cccccc;
+  bottom: 12px;
+  left: -50px;
+  width: 320px;
+  max-height: 500px;
+  overflow-y: auto;
+  border-radius: 10px;
+}
+.ol-popup::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+.ol-popup-closer {
+  text-decoration: none;
+  position: absolute;
+  top: 2px;
+  right: 8px;
+}
+.ol-popup-closer:after {
+  content: "\f00d";
+  font-family: FontAwesome;
+  font-size: 1em;
+  border: 0;
+}
+.ol-popup-closer1 {
+  text-decoration: none;
+  position: absolute;
+  top: 2px;
+  right: 8px;
+}
+.ol-popup-closer1:after {
+  content: "\f00d";
+  font-family: FontAwesome;
+  font-size: 1em;
+  border: 0;
+}
+
+.ol-touch .search-layer {
+  top: 80px;
+}
+.ol-geocoder.gcd-gl-container {
+  box-sizing: border-box;
+  left: 0.5em;
+  position: absolute;
+  top: 4.875em;
+}
+
+.ol-geocoder.gcd-gl-container *,
+.ol-geocoder.gcd-gl-container :after,
+.ol-geocoder.gcd-gl-container :before {
+  box-sizing: inherit;
+}
+
+.ol-viewport {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 500px;
+  touch-action: none;
+}
+
+.ol-chart {
+  width: 100%;
+}
+

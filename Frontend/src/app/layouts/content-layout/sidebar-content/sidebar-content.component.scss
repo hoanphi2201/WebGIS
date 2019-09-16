@@ -1,0 +1,84 @@
+.border-collapse {
+  border-right: 1px solid #edf2f9;
+}
+.alain-default__aside-user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 24px 24px 0;
+  cursor: pointer;
+}
+.alain-default__aside-user-avatar {
+  margin-right: 8px;
+}
+.alain-default__aside-user-info {
+  flex: 1;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.65);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.main-nav {
+  width: calc(100% - 40px);
+}
+.is-folder {
+  width: 80px!important;
+}
+.nav-action {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  float: right;
+  width: 40px;
+  text-align: center;
+  background-color: #f1f7f8;
+  height: 100%;
+}
+.nav-right {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.nav-right li > a:active,
+.nav-right li > a:focus,
+.nav-right li > a:hover{
+  color: #3f87f5;
+  background-color: rgba(63, 135, 245, 0.1);
+}
+.nav-right li > a.active {
+  color: #3f87f5;
+  background-color: rgba(63, 135, 245, 0.1);
+}
+.nav-right li > a {
+  padding: 6px 12px;
+  font-size: 18px;
+  color: #53535f;
+  display: block;
+  transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  -ms-transition: background-color 0.3s;
+  border-radius: 0.25rem;
+}
+.side-nav {
+  overflow: hidden!important;
+}
+::ng-deep .ant-tree li .ant-tree-node-content-wrapper.ant-tree-node-selected {
+  background-color: #bae7ff!important;
+}
+.footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  border-top: 1px solid rgb(232, 232, 232);
+  padding: 10px 16px;
+  text-align: right;
+  left: 0px;
+  background: #fff;
+}
+.ant-form-item {
+  margin: 0px!important;
+}

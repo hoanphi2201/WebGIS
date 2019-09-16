@@ -1,0 +1,116 @@
+<nz-card>
+  <div nz-row>
+    <button nz-button (click)="openForm(null)">Add new user</button>
+    <button nz-button class="pull-right" [disabled]="numberOfChecked === 0" nz-popconfirm
+      nzPopconfirmTitle="Are you sure delete check user?" (nzOnConfirm)="onDeleteMultyUser()" [nzCancelText]="'Cancel'"
+      [nzOkText]="'Ok'" nzPopconfirmPlacement="top">
+      Delete check users
+    </button>
+  </div>
+  <br>
+  <div nz-row>
+      <nz-table #rowSelectionTable nzShowPagination [nzData]="listOfAllData"
+       [nzPageSize]="configPagging.itemsPerPage" [nzTotal]="configPagging.totalItems"
+      [nzFrontPagination]="false" (nzPageIndexChange)="pageIndexChange($event)">
+      <thead>
+        <tr>
+          <th nzShowCheckbox [(nzChecked)]="isAllDisplayDataChecked"
+            (nzCheckedChange)="checkAll($event)" [nzIndeterminate]="isIndeterminate"></th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>User Name</th>
+          <th>Email</th>
+          <th>Created At</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of rowSelectionTable.data">
+          <td nzShowCheckbox [(nzChecked)]="mapOfCheckedId[data.id]" [nzDisabled]="data.disabled"
+            (nzCheckedChange)="refreshStatus()" ></td>
+          <td>{{ data.firstname }}</td>
+          <td>{{ data.lastname }}</td>
+          <td>{{ data.username }}</td>
+          <td>{{ data.email }}</td>
+          <td>{{ data.createdAt  | date: 'yyyy-MM-dd hh:mm'}}</td>
+          <td>
+            <a (click)="openForm(data)">Edit</a>
+            <nz-divider nzType="vertical"></nz-divider>
+            <a nz-popconfirm
+            nzPopconfirmTitle="Are you sure delete this user?"
+            (nzOnConfirm)="onDeleteUser(data.id)"
+            [nzCancelText]="'Cancel'"
+            [nzOkText]="'Ok'"
+            nzPopconfirmPlacement="top"
+            >Delete</a>
+          </td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </div>
+</nz-card>
+
+<nz-drawer [nzBodyStyle]="{ height: 'calc(100% - 55px)', overflow: 'auto', 'padding-bottom': '53px' }"
+  [nzMaskClosable]="false" [nzWidth]="720" [nzVisible]="visible" nzTitle="Tạo mới người dùng" (nzOnClose)="closeForm()">
+  <form #formDirective="ngForm" [formGroup]="form" nz-form>
+    <div nz-row nzGutter="8">
+      <div nz-col nzSpan="12">
+        <nz-form-item>
+          <nz-form-label>First Name</nz-form-label>
+          <nz-form-control>
+            <input formControlName="firstname" [(ngModel)]="userSelectedEdit.firstname" nz-input placeholder="please enter first name" />
+          </nz-form-control>
+        </nz-form-item>
+      </div>
+      <div nz-col nzSpan="12">
+        <nz-form-item>
+          <nz-form-label>Last Name</nz-form-label>
+          <nz-form-control>
+            <input formControlName="lastname" [(ngModel)]="userSelectedEdit.lastname" nz-input placeholder="please enter last name" />
+          </nz-form-control>
+        </nz-form-item>
+      </div>
+    </div>
+    <div nz-row nzGutter="8">
+      <div nz-col nzSpan="12">
+        <nz-form-item>
+          <nz-form-label>User Name</nz-form-label>
+          <nz-form-control>
+            <input formControlName="username" [(ngModel)]="userSelectedEdit.username" nz-input placeholder="please enter user name" />
+          </nz-form-control>
+        </nz-form-item>
+      </div>
+      <div nz-col nzSpan="12">
+        <nz-form-item>
+          <nz-form-label>Email</nz-form-label>
+          <nz-form-control>
+            <input formControlName="email" [(ngModel)]="userSelectedEdit.email" nz-input placeholder="please enter email" />
+          </nz-form-control>
+        </nz-form-item>
+      </div>
+    </div>
+    <div nz-row nzGutter="8">
+      <div nz-col nzSpan="12">
+        <nz-form-item>
+          <nz-form-label>Password</nz-form-label>
+          <nz-form-control>
+            <input formControlName="password" autocomplete="password" type="password" nz-input placeholder="please enter pasword" />
+          </nz-form-control>
+        </nz-form-item>
+      </div>
+      <div nz-col nzSpan="12">
+        <nz-form-item>
+          <nz-form-label>Confirm Password</nz-form-label>
+          <nz-form-control>
+            <input formControlName="confirmPassword" autocomplete="password" type="password" nz-input
+              placeholder="please enter confirm pasword" />
+          </nz-form-control>
+        </nz-form-item>
+      </div>
+    </div>
+  </form>
+  <div class="footer">
+    <button type="button" (click)="closeForm()" class="ant-btn" style="margin-right: 8px;"><span>Cancel</span></button>
+    <button type="button" (click)="onAddUser(form, formDirective)" class="ant-btn ant-btn-primary"><span>Submit</span></button>
+  </div>
+</nz-drawer>

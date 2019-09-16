@@ -1,0 +1,2356 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "P0136. GIS - Prototype Development",
+    "description": "- Use opensource\n - Using AWS\n - First demo Aug - 01\n - Release POC end of September\n - Start date: 07/11/2019\n - End date: 09/20/2019"
+  },
+  "host": "localhost:8080",
+  "basePath": "/api/v1",
+  "schemes": ["http"],
+  "consumes": ["application/json"],
+  "produces": ["application/json"],
+  "paths": {
+    "/users": {
+      "get": {
+        "tags": ["Users"],
+        "parameters": [
+          {
+            "name": "status",
+            "in": "query",
+            "description": "Status of user that we want to find(active or inactive) ex: status=active.",
+            "type": "string"
+          },
+          {
+            "name": "sort_field",
+            "in": "query",
+            "description": "Field of user that we want to sort ex: sort_field=username.",
+            "type": "string"
+          },
+          {
+            "name": "sort_type",
+            "in": "query",
+            "description": "Type of Field that we want to sort(asc or desc) ex: sort_type=asc.",
+            "type": "string"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": "Page number, starting with 1. ex: page=1.",
+            "type": "number"
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "description": "Requested response Page size. Minimum, maximum and default is defined by Provider. Minimum can never be lower than 1 ex: pageSize=10.",
+            "type": "number"
+          },
+          {
+            "name": "keyword",
+            "in": "query",
+            "description": "Search user by username include keyword.",
+            "type": "string"
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "summary": "Get all users in system",
+        "responses": {
+          "200": {
+            "description": "Succesfully retrieved resource.",
+            "schema": {
+              "$ref": "#/definitions/UserResponse"
+            }
+          },
+          "400": {
+            "description": "User is notfound",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create new user in system",
+        "tags": ["Users"],
+        "parameters": [
+          {
+            "name": "user",
+            "in": "body",
+            "description": "User that we want to create",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "New user is created",
+            "schema": {
+              "$ref": "#/definitions/UserResponse"
+            }
+          },
+          "400": {
+            "description": "User is notfound",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    },
+    "/users/{userId}": {
+      "parameters": [
+        {
+          "name": "userId",
+          "in": "path",
+          "required": true,
+          "description": "ID of user that we want to find",
+          "type": "string"
+        },
+        {
+          "name": "Authorization",
+          "in": "header",
+          "description": "An authorization header .",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "get": {
+        "tags": ["Users"],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "summary": "Get user with given ID",
+        "responses": {
+          "200": {
+            "description": "User is found",
+            "schema": {
+              "$ref": "#/definitions/UserResponse"
+            }
+          },
+          "400": {
+            "description": "User is notfound",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete user with given ID",
+        "tags": ["Users"],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User is deleted",
+            "schema": {
+              "$ref": "#/definitions/UserResponse"
+            }
+          },
+          "400": {
+            "description": "User is notfound",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      },
+      "put": {
+        "summary": "Update user with give ID",
+        "tags": ["Users"],
+        "parameters": [
+          {
+            "name": "user",
+            "in": "body",
+            "description": "User with new values of properties",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User is updated",
+            "schema": {
+              "$ref": "#/definitions/UserResponse"
+            }
+          },
+          "400": {
+            "description": "User is notfound",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    },
+    "/users/change-status": {
+      "put": {
+        "summary": "Update status multy user with give array ID",
+        "tags": ["Users"],
+        "parameters": [
+          {
+            "name": "request",
+            "in": "body",
+            "description": "Status that we want to change",
+            "schema": {
+              "properties": {
+                "status": {
+                  "type": "string"
+                },
+                "userIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User is updated",
+            "schema": {
+              "$ref": "#/definitions/UserResponse"
+            }
+          },
+          "400": {
+            "description": "User is notfound",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    },
+    "/users/change-status/{userId}": {
+      "parameters": [
+        {
+          "name": "userId",
+          "in": "path",
+          "required": true,
+          "description": "ID of user that we want to find",
+          "type": "string"
+        },
+        {
+          "name": "Authorization",
+          "in": "header",
+          "description": "An authorization header .",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "put": {
+        "summary": "Update status of user with give ID",
+        "tags": ["Users"],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User is updated",
+            "schema": {
+              "$ref": "#/definitions/UserResponse"
+            }
+          },
+          "400": {
+            "description": "User is notfound",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    },
+    "/keywords": {
+      "get": {
+        "tags": ["Keywords"],
+        "parameters": [
+          {
+            "name": "status",
+            "in": "query",
+            "description": "Status of keyword that we want to find(active or inactive) ex: status=active.",
+            "type": "string"
+          },
+          {
+            "name": "sort_field",
+            "in": "query",
+            "description": "Field of keyword that we want to sort ex: sort_field=status.",
+            "type": "string"
+          },
+          {
+            "name": "sort_type",
+            "in": "query",
+            "description": "Type of Field that we want to sort(asc or desc) ex: sort_type=asc.",
+            "type": "string"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": "Page number, starting with 1. ex: page=1.",
+            "type": "number"
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "description": "Requested response Page size. Minimum, maximum and default is defined by Provider. Minimum can never be lower than 1 ex: pageSize=10.",
+            "type": "number"
+          },
+          {
+            "name": "keyword",
+            "in": "query",
+            "description": "Search keyword by content include keyword.",
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "description": "Search keyword by type include/exclude.",
+            "type": "string"
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "summary": "Get all keywords in system",
+        "responses": {
+          "200": {
+            "description": "Succesfully retrieved resource.",
+            "schema": {
+              "$ref": "#/definitions/KeywordResponse"
+            }
+          },
+          "400": {
+            "description": "User is notfound",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create new keyword in system",
+        "tags": ["Keywords"],
+        "parameters": [
+          {
+            "name": "keyword",
+            "in": "body",
+            "description": "Keyword that we want to create",
+            "schema": {
+              "$ref": "#/definitions/Keyword"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "New keyword is created",
+            "schema": {
+              "$ref": "#/definitions/KeywordResponse"
+            }
+          },
+          "400": {
+            "description": "User is notfound",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    },
+    "/keywords/rank": {
+      "get": {
+        "tags": ["Keywords"],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "summary": "Get all keywords in system",
+        "responses": {
+          "200": {
+            "description": "Succesfully retrieved resource.",
+            "schema": {
+              "$ref": "#/definitions/KeywordResponse"
+            }
+          },
+          "400": {
+            "description": "User is notfound",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    },
+    "/keywords/map": {
+      "get": {
+        "tags": ["Keywords"],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "summary": "Get all keywords in system",
+        "responses": {
+          "200": {
+            "description": "Succesfully retrieved resource.",
+            "schema": {
+              "$ref": "#/definitions/KeywordResponse"
+            }
+          },
+          "400": {
+            "description": "User is notfound",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    },
+    "/keywords/delete-multy": {
+      "post": {
+        "summary": "Delete multy keyword by array id",
+        "tags": ["Keywords"],
+        "parameters": [
+          {
+            "name": "request",
+            "in": "body",
+            "description": "Id that we want to delete",
+            "schema": {
+              "properties": {
+                "keywordIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "New keyword is created",
+            "schema": {
+              "$ref": "#/definitions/KeywordResponse"
+            }
+          },
+          "400": {
+            "description": "User is notfound",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    },
+    "/keywords/{keywordId}": {
+      "parameters": [
+        {
+          "name": "keywordId",
+          "in": "path",
+          "required": true,
+          "description": "ID of keyword that we want to find",
+          "type": "string"
+        },
+        {
+          "name": "Authorization",
+          "in": "header",
+          "description": "An authorization header .",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "get": {
+        "tags": ["Keywords"],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "summary": "Get keyword with given ID",
+        "responses": {
+          "200": {
+            "description": "Keyword is found",
+            "schema": {
+              "$ref": "#/definitions/KeywordResponse"
+            }
+          },
+          "400": {
+            "description": "Keyword is notfound",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete keyword with given ID",
+        "tags": ["Keywords"],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Keyword is deleted",
+            "schema": {
+              "$ref": "#/definitions/KeywordResponse"
+            }
+          },
+          "400": {
+            "description": "Keyword is notfound",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      },
+      "put": {
+        "summary": "Update keyword with give ID",
+        "tags": ["Keywords"],
+        "parameters": [
+          {
+            "name": "keyword",
+            "in": "body",
+            "description": "Keyword with new values of properties",
+            "schema": {
+              "$ref": "#/definitions/Keyword"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Keyword is updated",
+            "schema": {
+              "$ref": "#/definitions/KeywordResponse"
+            }
+          },
+          "400": {
+            "description": "Keyword is notfound",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    },
+    "/keywords/change-status": {
+      "put": {
+        "summary": "Update status multy keyword with give array ID",
+        "tags": ["Keywords"],
+        "parameters": [
+          {
+            "name": "request",
+            "in": "body",
+            "description": "Status that we want to change",
+            "schema": {
+              "properties": {
+                "status": {
+                  "type": "string"
+                },
+                "keywordIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Keyword is updated",
+            "schema": {
+              "$ref": "#/definitions/KeywordResponse"
+            }
+          },
+          "400": {
+            "description": "Keyword is notfound",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    },
+    "/keywords/change-status/{keywordId}": {
+      "parameters": [
+        {
+          "name": "keywordId",
+          "in": "path",
+          "required": true,
+          "description": "ID of keyword that we want to find",
+          "type": "string"
+        },
+        {
+          "name": "Authorization",
+          "in": "header",
+          "description": "An authorization header .",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "put": {
+        "summary": "Update status of keyword with give ID",
+        "tags": ["Keywords"],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Keyword is updated",
+            "schema": {
+              "$ref": "#/definitions/KeywordResponse"
+            }
+          },
+          "400": {
+            "description": "Keyword is notfound",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    },
+    "/keywords/change-display-to-ranking/{keywordId}": {
+      "parameters": [
+        {
+          "name": "keywordId",
+          "in": "path",
+          "required": true,
+          "description": "ID of keyword that we want to find",
+          "type": "string"
+        },
+        {
+          "name": "Authorization",
+          "in": "header",
+          "description": "An authorization header .",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "put": {
+        "summary": "Display to ranking of keyword with give ID",
+        "tags": ["Keywords"],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Keyword is updated",
+            "schema": {
+              "$ref": "#/definitions/KeywordResponse"
+            }
+          },
+          "400": {
+            "description": "Keyword is notfound",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    },
+    "/alert_histories": {
+      "get": {
+        "tags": ["Alert Histories"],
+        "parameters": [
+          {
+            "name": "status",
+            "in": "query",
+            "description": "Status of alert history that we want to find(active or inactive) ex: status=active.",
+            "type": "string"
+          },
+          {
+            "name": "sort_field",
+            "in": "query",
+            "description": "Field of alert history that we want to sort ex: sort_field=status.",
+            "type": "string"
+          },
+          {
+            "name": "sort_type",
+            "in": "query",
+            "description": "Type of Field that we want to sort(asc or desc) ex: sort_type=asc.",
+            "type": "string"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": "Page number, starting with 1. ex: page=1.",
+            "type": "number"
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "description": "Requested response Page size. Minimum, maximum and default is defined by Provider. Minimum can never be lower than 1 ex: pageSize=10.",
+            "type": "number"
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "summary": "Get all roles in system",
+        "responses": {
+          "200": {
+            "description": "Succesfully retrieved resource.",
+            "schema": {
+              "$ref": "#/definitions/Alert_historyResponse"
+            }
+          },
+          "400": {
+            "description": "User is notfound",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create new alert history in system",
+        "tags": ["Alert Histories"],
+        "parameters": [
+          {
+            "name": "Alert history",
+            "in": "body",
+            "description": "Alert history that we want to create",
+            "schema": {
+              "properties": {
+                "status": {
+                  "type": "string",
+                  "enum": ["active", "inactive"]
+                },
+                "keyword_id": {
+                  "type": "number"
+                },
+                "time_range": {
+                  "type": "number"
+                },
+                "number_of_appearing_threshold": {
+                  "type": "number"
+                }
+              }
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "New alert history is created",
+            "schema": {
+              "$ref": "#/definitions/Alert_historyResponse"
+            }
+          },
+          "400": {
+            "description": "User is notfound",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    },
+    "/alert_histories/{alertHistoryId}": {
+      "parameters": [
+        {
+          "name": "alertHistoryId",
+          "in": "path",
+          "required": true,
+          "description": "ID of alert history that we want to find",
+          "type": "string"
+        },
+        {
+          "name": "Authorization",
+          "in": "header",
+          "description": "An authorization header .",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "get": {
+        "tags": ["Alert Histories"],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "summary": "Get alert history with given ID",
+        "responses": {
+          "200": {
+            "description": "Alert history is found",
+            "schema": {
+              "$ref": "#/definitions/Alert_historyResponse"
+            }
+          },
+          "400": {
+            "description": "Alert history is notfound",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete alert history with given ID",
+        "tags": ["Alert Histories"],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Alert history is deleted",
+            "schema": {
+              "$ref": "#/definitions/Alert_historyResponse"
+            }
+          },
+          "400": {
+            "description": "Alert history is notfound",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    },
+    "/alert_histories/lastest": {
+      "get": {
+        "tags": ["Alert Histories"],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Get n element sort by createdAt(default 1).",
+            "type": "number"
+          }
+        ],
+        "summary": "Get alert history with given ID",
+        "responses": {
+          "200": {
+            "description": "Alert history is found",
+            "schema": {
+              "$ref": "#/definitions/Alert_historyResponse"
+            }
+          },
+          "400": {
+            "description": "Alert history is notfound",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    },
+    "/alert_histories/change-status": {
+      "put": {
+        "summary": "Update status multy alert history with give array ID",
+        "tags": ["Alert Histories"],
+        "parameters": [
+          {
+            "name": "request",
+            "in": "body",
+            "description": "Status that we want to change",
+            "schema": {
+              "properties": {
+                "status": {
+                  "type": "string"
+                },
+                "alertHistoryIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Alert history is updated",
+            "schema": {
+              "$ref": "#/definitions/Alert_historyResponse"
+            }
+          },
+          "400": {
+            "description": "Alert history is notfound",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    },
+    "/alert_histories/change-status/{alertHistoryId}": {
+      "parameters": [
+        {
+          "name": "alertHistoryId",
+          "in": "path",
+          "required": true,
+          "description": "ID of alert history that we want to find",
+          "type": "string"
+        },
+        {
+          "name": "Authorization",
+          "in": "header",
+          "description": "An authorization header .",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "put": {
+        "summary": "Update status of alert history with give ID",
+        "tags": ["Alert Histories"],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Alert history is updated",
+            "schema": {
+              "$ref": "#/definitions/Alert_historyResponse"
+            }
+          },
+          "400": {
+            "description": "Alert history is notfound",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    },
+    "/roles": {
+      "get": {
+        "tags": ["Roles"],
+        "parameters": [
+          {
+            "name": "status",
+            "in": "query",
+            "description": "Status of role that we want to find(active or inactive) ex: status=active.",
+            "type": "string"
+          },
+          {
+            "name": "sort_field",
+            "in": "query",
+            "description": "Field of role that we want to sort ex: sort_field=status.",
+            "type": "string"
+          },
+          {
+            "name": "sort_type",
+            "in": "query",
+            "description": "Type of Field that we want to sort(asc or desc) ex: sort_type=asc.",
+            "type": "string"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": "Page number, starting with 1. ex: page=1.",
+            "type": "number"
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "description": "Requested response Page size. Minimum, maximum and default is defined by Provider. Minimum can never be lower than 1 ex: pageSize=10.",
+            "type": "number"
+          },
+          {
+            "name": "keyword",
+            "in": "query",
+            "description": "Search role by name include keyword.",
+            "type": "string"
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "summary": "Get all roles in system",
+        "responses": {
+          "200": {
+            "description": "Succesfully retrieved resource.",
+            "schema": {
+              "$ref": "#/definitions/RoleResponse"
+            }
+          },
+          "400": {
+            "description": "User is notfound",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create new role in system",
+        "tags": ["Roles"],
+        "parameters": [
+          {
+            "name": "role",
+            "in": "body",
+            "description": "Role that we want to create",
+            "schema": {
+              "$ref": "#/definitions/Role"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "New role is created",
+            "schema": {
+              "$ref": "#/definitions/RoleResponse"
+            }
+          },
+          "400": {
+            "description": "User is notfound",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    },
+    "/roles/{roleId}": {
+      "parameters": [
+        {
+          "name": "roleId",
+          "in": "path",
+          "required": true,
+          "description": "ID of role that we want to find",
+          "type": "string"
+        },
+        {
+          "name": "Authorization",
+          "in": "header",
+          "description": "An authorization header .",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "get": {
+        "tags": ["Roles"],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "summary": "Get role with given ID",
+        "responses": {
+          "200": {
+            "description": "Role is found",
+            "schema": {
+              "$ref": "#/definitions/RoleResponse"
+            }
+          },
+          "400": {
+            "description": "Role is notfound",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete role with given ID",
+        "tags": ["Roles"],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Role is deleted",
+            "schema": {
+              "$ref": "#/definitions/RoleResponse"
+            }
+          },
+          "400": {
+            "description": "Role is notfound",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      },
+      "put": {
+        "summary": "Update role with give ID",
+        "tags": ["Roles"],
+        "parameters": [
+          {
+            "name": "role",
+            "in": "body",
+            "description": "Role with new values of properties",
+            "schema": {
+              "$ref": "#/definitions/Role"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Role is updated",
+            "schema": {
+              "$ref": "#/definitions/RoleResponse"
+            }
+          },
+          "400": {
+            "description": "Role is notfound",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    },
+    "/roles/change-status": {
+      "put": {
+        "summary": "Update status multy role with give array ID",
+        "tags": ["Roles"],
+        "parameters": [
+          {
+            "name": "request",
+            "in": "body",
+            "description": "Status that we want to change",
+            "schema": {
+              "properties": {
+                "status": {
+                  "type": "string"
+                },
+                "roleIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Role is updated",
+            "schema": {
+              "$ref": "#/definitions/RoleResponse"
+            }
+          },
+          "400": {
+            "description": "Role is notfound",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    },
+    "/roles/change-status/{roleId}": {
+      "parameters": [
+        {
+          "name": "roleId",
+          "in": "path",
+          "required": true,
+          "description": "ID of role that we want to find",
+          "type": "string"
+        },
+        {
+          "name": "Authorization",
+          "in": "header",
+          "description": "An authorization header .",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "put": {
+        "summary": "Update status of role with give ID",
+        "tags": ["Roles"],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Role is updated",
+            "schema": {
+              "$ref": "#/definitions/RoleResponse"
+            }
+          },
+          "400": {
+            "description": "Role is notfound",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    },
+    "/auth/login": {
+      "post": {
+        "summary": "Login into the system with username & password",
+        "tags": ["Auth"],
+        "parameters": [
+          {
+            "name": "request",
+            "in": "body",
+            "description": "Status that we want to change",
+            "schema": {
+              "properties": {
+                "username": {
+                  "type": "string"
+                },
+                "password": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Authenticate success.",
+            "schema": {
+              "properties": {
+                "status": {
+                  "$ref": "#/definitions/Status"
+                },
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "properties": {
+                      "access_token": {
+                        "type": "string"
+                      },
+                      "refresh_token": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Failed to authenticate with token.",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    },
+    "/auth/refresh_token": {
+      "post": {
+        "summary": "Get new token",
+        "tags": ["Auth"],
+        "parameters": [
+          {
+            "name": "refresh_token",
+            "in": "body",
+            "schema": {
+              "properties": {
+                "refresh_token": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Authenticate success.",
+            "schema": {
+              "properties": {
+                "status": {
+                  "$ref": "#/definitions/Status"
+                },
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "properties": {
+                      "access_token": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Failed to authenticate with token.",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    },
+    "/auth/logout": {
+      "post": {
+        "summary": "Logout the system",
+        "tags": ["Auth"],
+        "parameters": [
+          {
+            "name": "refresh_token",
+            "in": "body",
+            "schema": {
+              "properties": {
+                "refresh_token": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Logout success.",
+            "schema": {
+              "properties": {
+                "status": {
+                  "$ref": "#/definitions/Status"
+                },
+                "results": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "example": []
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Failed to authenticate with token.",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    },
+    "/statuses/search-twitter": {
+      "get": {
+        "summary": "Search twitter",
+        "tags": ["Twitter"],
+        "parameters": [
+          {
+            "name": "keyword",
+            "in": "query",
+            "description": "Search status by text include keyword.",
+            "type": "string"
+          },
+          {
+            "name": "exclude",
+            "in": "query",
+            "description": "Search status by text not include keyword.",
+            "type": "string"
+          },
+          {
+            "name": "language",
+            "in": "query",
+            "description": "Search status by language(ex: language=ja).",
+            "type": "string"
+          },
+          {
+            "name": "from",
+            "in": "query",
+            "description": "Search from a day(ISODate).",
+            "type": "string"
+          },
+          {
+            "name": "to",
+            "in": "query",
+            "description": "Search to a day(ISODate).",
+            "type": "string"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": "Page number, starting with 1. ex: page=1.",
+            "type": "number"
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "description": "Requested response Page size. Minimum, maximum and default is defined by Provider. Minimum can never be lower than 1 ex: pageSize=10.",
+            "type": "number"
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Succesfully retrieved resource.",
+            "schema": {}
+          },
+          "400": {
+            "description": "Failed to authenticate with token.",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    },
+    "/statuses/search-twitter/map": {
+      "get": {
+        "summary": "Search twitter",
+        "tags": ["Twitter"],
+        "parameters": [
+          {
+            "name": "keyword",
+            "in": "query",
+            "description": "Search status by text include keyword.",
+            "type": "string"
+          },
+          {
+            "name": "exclude",
+            "in": "query",
+            "description": "Search status by text not include keyword.",
+            "type": "string"
+          },
+          {
+            "name": "language",
+            "in": "query",
+            "description": "Search status by language(ex: language=ja).",
+            "type": "string"
+          },
+          {
+            "name": "from",
+            "in": "query",
+            "description": "Search from a day(ISODate).",
+            "type": "string"
+          },
+          {
+            "name": "to",
+            "in": "query",
+            "description": "Search to a day(ISODate).",
+            "type": "string"
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Succesfully retrieved resource.",
+            "schema": {}
+          },
+          "400": {
+            "description": "Failed to authenticate with token.",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    },
+    "/statuses/search-twitter/graph": {
+      "get": {
+        "summary": "Search twitter",
+        "tags": ["Twitter"],
+        "parameters": [
+          {
+            "name": "keyword",
+            "in": "query",
+            "description": "Search status by text include keyword.",
+            "type": "string"
+          },
+          {
+            "name": "exclude",
+            "in": "query",
+            "description": "Search status by text not include keyword.",
+            "type": "string"
+          },
+          {
+            "name": "language",
+            "in": "query",
+            "description": "Search status by language(ex: language=ja).",
+            "type": "string"
+          },
+          {
+            "name": "from",
+            "in": "query",
+            "description": "Search from a day(ISODate).",
+            "type": "string"
+          },
+          {
+            "name": "to",
+            "in": "query",
+            "description": "Search to a day(ISODate).",
+            "type": "string"
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "An authorization header .",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Succesfully retrieved resource.",
+            "schema": {}
+          },
+          "400": {
+            "description": "Failed to authenticate with token.",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    },
+    "/settings": {
+      "parameters": [
+        {
+          "name": "Authorization",
+          "in": "header",
+          "description": "An authorization header .",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "get": {
+        "tags": ["Settings"],
+        "summary": "Get setting in system",
+        "responses": {
+          "200": {
+            "description": "Succesfully retrieved resource.",
+            "schema": {
+              "$ref": "#/definitions/SettingResponse"
+            }
+          },
+          "400": {
+            "description": "User is notfound",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": ["Settings"],
+        "summary": "Update setting in system",
+        "parameters": [
+          {
+            "name": "setting",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/Setting"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Succesfully retrieved resource.",
+            "schema": {
+              "$ref": "#/definitions/SettingResponse"
+            }
+          },
+          "400": {
+            "description": "User is notfound",
+            "schema": {
+              "$ref": "#/definitions/NotFound"
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "definitions": {
+    "User": {
+      "required": ["email", "id", "username", "password"],
+      "properties": {
+        "id": {
+          "type": "number",
+          "uniqueItems": true
+        },
+        "status": {
+          "type": "string",
+          "enum": ["active", "inactive"]
+        },
+        "username": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string",
+          "uniqueItems": true
+        },
+        "lastname": {
+          "type": "string"
+        },
+        "firstname": {
+          "type": "string"
+        },
+        "language": {
+          "type": "string"
+        },
+        "roleId": {
+          "type": "number"
+        },
+        "country": {
+          "type": "string"
+        },
+        "last_login": {
+          "type": "string"
+        }
+      }
+    },
+    "UserResponse": {
+      "properties": {
+        "status": {
+          "$ref": "#/definitions/Status"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/User"
+          }
+        }
+      }
+    },
+    "Keyword": {
+      "required": ["id", "content", "status"],
+      "properties": {
+        "id": {
+          "type": "number",
+          "uniqueItems": true
+        },
+        "status": {
+          "type": "string",
+          "enum": ["active", "inactive"]
+        },
+        "content": {
+          "type": "string"
+        },
+        "display_to_ranking": {
+          "type": "boolean"
+        },
+        "number_of_appearing_threshold": {
+          "type": "number"
+        },
+        "type": {
+          "type": "string",
+          "enum": ["include", "exclude"]
+        }
+      }
+    },
+    "KeywordResponse": {
+      "properties": {
+        "status": {
+          "$ref": "#/definitions/Status"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Keyword"
+          }
+        }
+      }
+    },
+    "Role": {
+      "required": ["id", "name"],
+      "properties": {
+        "id": {
+          "type": "number",
+          "uniqueItems": true
+        },
+        "name": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["active", "inactive"]
+        }
+      }
+    },
+    "RoleResponse": {
+      "properties": {
+        "status": {
+          "$ref": "#/definitions/Status"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Role"
+          }
+        }
+      }
+    },
+    "Twitter": {
+      "properties": {
+        "created_at": {
+          "type": "string"
+        },
+        "id": {
+          "type": "number"
+        },
+        "id_str": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        },
+        "truncated": {
+          "type": "boolean"
+        },
+        "in_reply_to_status_id": {
+          "type": "number"
+        },
+        "in_reply_to_status_id_str": {
+          "type": "string"
+        },
+        "in_reply_to_user_id": {
+          "type": "number"
+        },
+        "in_reply_to_user_id_str": {
+          "type": "string"
+        },
+        "in_reply_to_screen_name": {
+          "type": "string"
+        },
+        "user": {
+          "properties": {
+            "id": {
+              "type": "number"
+            },
+            "id_str": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "screen_name": {
+              "type": "string"
+            },
+            "location": {
+              "type": "string"
+            },
+            "derived": {
+              "properties": {
+                "locations": {
+                  "type": "array",
+                  "$ref": "#/definitions/Location"
+                }
+              }
+            },
+            "url": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "protected": {
+              "type": "boolean"
+            },
+            "verified": {
+              "type": "boolean"
+            },
+            "followers_count": {
+              "type": "number"
+            },
+            "friends_count": {
+              "type": "number"
+            },
+            "listed_count": {
+              "type": "number"
+            },
+            "favourites_count": {
+              "type": "number"
+            },
+            "statuses_count": {
+              "type": "number"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "profile_banner_url": {
+              "type": "string"
+            },
+            "profile_image_url_https": {
+              "type": "string"
+            },
+            "default_profile": {
+              "type": "boolean"
+            },
+            "default_profile_image": {
+              "type": "boolean"
+            },
+            "withheld_in_countries": {
+              "type": "array"
+            },
+            "withheld_scope": {
+              "type": "string"
+            },
+            "utc_offset": {
+              "type": "string"
+            },
+            "time_zone": {
+              "type": "string"
+            },
+            "lang": {
+              "type": "string"
+            },
+            "geo_enabled": {
+              "type": "boolean"
+            },
+            "following": {
+              "type": "string"
+            },
+            "follow_request_sent": {
+              "type": "string"
+            },
+            "has_extended_profile": {
+              "type": "string"
+            },
+            "notifications": {
+              "type": "string"
+            },
+            "profile_location": {
+              "type": "string"
+            },
+            "contributors_enabled": {
+              "type": "string"
+            },
+            "profile_image_url": {
+              "type": "string"
+            },
+            "profile_background_color": {
+              "type": "string"
+            },
+            "profile_background_image_url": {
+              "type": "string"
+            },
+            "profile_background_image_url_https": {
+              "type": "string"
+            },
+            "profile_background_tile": {
+              "type": "string"
+            },
+            "profile_link_color": {
+              "type": "string"
+            },
+            "profile_sidebar_border_color": {
+              "type": "string"
+            },
+            "profile_sidebar_fill_color": {
+              "type": "string"
+            },
+            "profile_text_color": {
+              "type": "string"
+            },
+            "profile_use_background_image": {
+              "type": "string"
+            },
+            "is_translator": {
+              "type": "boolean"
+            },
+            "is_translation_enabled": {
+              "type": "boolean"
+            },
+            "translator_type": {
+              "type": "string"
+            }
+          }
+        },
+        "coordinates": {
+          "properties": {
+            "coordinates": {
+              "type": "array"
+            },
+            "type": {
+              "type": "string"
+            }
+          }
+        },
+        "place": {
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            },
+            "place_type": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "country_code": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "bounding_box": {
+              "properties": {
+                "coordinates": {
+                  "type": "array"
+                },
+                "type": {
+                  "type": "string"
+                }
+              }
+            },
+            "attributes": {}
+          }
+        },
+        "quoted_status_id": {
+          "type": "number"
+        },
+        "quoted_status_id_str": {
+          "type": "string"
+        },
+        "is_quote_status": {
+          "type": "boolean"
+        },
+        "quote_count": {
+          "type": "number"
+        },
+        "reply_count": {
+          "type": "number"
+        },
+        "retweet_count": {
+          "type": "number"
+        },
+        "favorite_count": {
+          "type": "number"
+        },
+        "entities": {
+          "properties": {
+            "hashtags": {
+              "type": "array"
+            },
+            "media": {
+              "type": "array"
+            },
+            "urls": {
+              "type": "array"
+            },
+            "user_mentions": {
+              "type": "array"
+            },
+            "symbols": {
+              "type": "array"
+            },
+            "polls": {
+              "type": "array"
+            }
+          }
+        },
+        "extended_entities": {
+          "properties": {
+            "hashtags": {
+              "type": "array"
+            },
+            "media": {
+              "type": "array"
+            },
+            "urls": {
+              "type": "array"
+            },
+            "user_mentions": {
+              "type": "array"
+            },
+            "symbols": {
+              "type": "array"
+            },
+            "polls": {
+              "type": "array"
+            }
+          }
+        },
+        "favorited": {
+          "type": "boolean"
+        },
+        "retweeted": {
+          "type": "boolean"
+        },
+        "possibly_sensitive": {
+          "type": "boolean"
+        },
+        "filter_level": {
+          "type": "string"
+        },
+        "lang": {
+          "type": "string"
+        },
+        "matching_rules": {
+          "type": "array"
+        },
+        "current_user_retweet": {},
+        "scopes": {},
+        "withheld_copyright": {
+          "type": "boolean"
+        },
+        "withheld_in_countries": {
+          "type": "array"
+        },
+        "withheld_scope": {
+          "type": "string"
+        },
+        "geo": {}
+      }
+    },
+    "Location": {
+      "properties": {
+        "country": {
+          "type": "string"
+        },
+        "country_code": {
+          "type": "string"
+        },
+        "locality": {
+          "type": "string"
+        },
+        "region": {
+          "type": "string"
+        },
+        "sub_region": {
+          "type": "string"
+        },
+        "full_name": {
+          "type": "string"
+        },
+        "geo": {
+          "properties": {
+            "coordinates": {
+              "type": "array"
+            },
+            "type": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "Status": {
+      "properties": {
+        "error": {
+          "type": "boolean",
+          "example": false
+        },
+        "code": {
+          "type": "number"
+        },
+        "type": {
+          "type": "string"
+        },
+        "message": {
+          "type": "string"
+        }
+      }
+    },
+    "Alert_history": {
+      "required": ["id"],
+      "properties": {
+        "id": {
+          "type": "number",
+          "uniqueItems": true
+        },
+        "status": {
+          "type": "string",
+          "enum": ["active", "inactive"]
+        },
+        "number_of_appearing_threshold": {
+          "type": "number"
+        },
+        "number_of_appearing_count": {
+          "type": "number"
+        },
+        "keyword_content": {
+          "type": "string"
+        },
+        "keyword_status": {
+          "type": "string",
+          "enum": ["active", "inactive"]
+        },
+        "keyword_type": {
+          "type": "string",
+          "enum": ["include", "exclude"]
+        },
+        "keyword_createdAt": {
+          "type": "string"
+        },
+        "keyword_updatedAt": {
+          "type": "string"
+        },
+        "end_time_of_status": {
+          "type": "string"
+        }
+      }
+    },
+    "Alert_historyResponse": {
+      "properties": {
+        "status": {
+          "$ref": "#/definitions/Status"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Alert_history"
+          }
+        }
+      }
+    },
+    "Setting": {
+      "properties": {
+        "id": {
+          "type": "number",
+          "uniqueItems": true
+        },
+        "send_alert_to_email": {
+          "type": "string"
+        },
+        "duration": {
+          "type": "number"
+        },
+        "max_date": {
+          "type": "string"
+        },
+        "time_range": {
+          "type": "number"
+        }
+      }
+    },
+    "SettingResponse": {
+      "properties": {
+        "status": {
+          "$ref": "#/definitions/Status"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Setting"
+          }
+        }
+      }
+    },
+    "NotFound": {
+      "properties": {
+        "status": {
+          "$ref": "#/definitions/Status"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "example": []
+        }
+      }
+    }
+  }
+}

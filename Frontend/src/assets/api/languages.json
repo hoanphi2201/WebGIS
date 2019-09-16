@@ -1,0 +1,34 @@
+[
+  {
+    "CountryCode": "ja",
+    "LanguageName": "Japanese"
+  },
+  {
+    "CountryCode": "en",
+    "LanguageName": "English"
+  },
+  {
+    "CountryCode": "ms",
+    "LanguageName": "Melayu"
+  },
+  {
+    "CountryCode": "fil",
+    "LanguageName": "Filipino"
+  },
+  {
+    "CountryCode": "vi",
+    "LanguageName": "Tiếng Việt"
+  },
+  {
+    "CountryCode": "in",
+    "LanguageName": "Indonesian"
+  },
+  {
+    "CountryCode": "zh",
+    "LanguageName": "Chinese"
+  },
+  {
+    "CountryCode": "th",
+    "LanguageName": "Thailand"
+  }
+]

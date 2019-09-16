@@ -1,0 +1,3567 @@
+[
+    {
+       "district_id": "89883",
+       "population": 285379,
+       "area": 115.4
+    },
+    {
+       "district_id": "89884",
+       "population": 111267,
+       "area": 105.2
+    },
+    {
+       "district_id": "89887",
+       "population": 171888,
+       "area": 176.4
+    },
+    {
+       "district_id": "89886",
+       "population": 179665,
+       "area": 226.2
+    },
+    {
+       "district_id": "89889",
+       "population": 246373,
+       "area": 450.7
+    },
+    {
+       "district_id": "89888",
+       "population": 207698,
+       "area": 313.1
+    },
+    {
+       "district_id": "89892",
+       "population": 170633,
+       "area": 354.8
+    },
+    {
+       "district_id": "89894",
+       "population": 181804,
+       "area": 470.8
+    },
+    {
+       "district_id": "89893",
+       "population": 346954,
+       "area": 369.1
+    },
+    {
+       "district_id": "95956",
+       "population": 109141,
+       "area": 424
+    },
+    {
+       "district_id": "95957",
+       "population": 122031,
+       "area": 419
+    },
+    {
+       "district_id": "95958",
+       "population": 101409,
+       "area": 251
+    },
+    {
+       "district_id": "52540",
+       "population": 286300,
+       "area": 286
+    },
+    {
+       "district_id": "52549",
+       "population": 182900,
+       "area": 244
+    },
+    {
+       "district_id": "52542",
+       "population": 24800,
+       "area": 697
+    },
+    {
+       "district_id": "52544",
+       "population": 86300,
+       "area": 753
+    },
+    {
+       "district_id": "52543",
+       "population": 210200,
+       "area": 421
+    },
+    {
+       "district_id": "52548",
+       "population": 192200,
+       "area": 681
+    },
+    {
+       "district_id": "52545",
+       "population": 173100,
+       "area": 556
+    },
+    {
+       "district_id": "52547",
+       "population": 1261000,
+       "area": 692
+    },
+    {
+       "district_id": "52550",
+       "population": 184000,
+       "area": 220
+    },
+    {
+       "district_id": "52551",
+       "population": 25200,
+       "area": 804
+    },
+    {
+       "district_id": "52546",
+       "population": 28600,
+       "area": 714
+    },
+    {
+       "district_id": "95961",
+       "population": 110856,
+       "area": 376
+    },
+    {
+       "district_id": "77747",
+       "population": 322150,
+       "area": 150.4
+    },
+    {
+       "district_id": "77748",
+       "population": 101283,
+       "area": 91
+    },
+    {
+       "district_id": "77755",
+       "population": 5540,
+       "area": 75.4
+    },
+    {
+       "district_id": "77750",
+       "population": 152343,
+       "area": 424.6
+    },
+    {
+       "district_id": "77753",
+       "population": 73886,
+       "area": 188.9
+    },
+    {
+       "district_id": "77752",
+       "population": 133628,
+       "area": 77.6
+    },
+    {
+       "district_id": "77751",
+       "population": 142876,
+       "area": 639.2
+    },
+    {
+       "district_id": "77754",
+       "population": 144354,
+       "area": 333.8
+    },
+    {
+       "district_id": "74718",
+       "population": 284181,
+       "area": 118.9
+    },
+    {
+       "district_id": "74721",
+       "population": 224346,
+       "area": 234.4
+    },
+    {
+       "district_id": "74724",
+       "population": 394433,
+       "area": 60.1
+    },
+    {
+       "district_id": "74725",
+       "population": 476221,
+       "area": 83.7
+    },
+    {
+       "district_id": "74726",
+       "population": 205488,
+       "area": 191.8
+    },
+    {
+       "district_id": "74723",
+       "population": 62481,
+       "area": 400.3
+    },
+    {
+       "district_id": "74719",
+       "population": 85653,
+       "area": 340
+    },
+    {
+       "district_id": "74720",
+       "population": 119308,
+       "area": 721.1
+    },
+    {
+       "district_id": "24213",
+       "population": 153015,
+       "area": 66.6
+    },
+    {
+       "district_id": "74722",
+       "population": 95109,
+       "area": 544.4
+    },
+    {
+       "district_id": "89890",
+       "population": 121889,
+       "area": 354.7
+    },
+    {
+       "district_id": "24223",
+       "population": 225267,
+       "area": 206
+    },
+    {
+       "district_id": "24217",
+       "population": 199106,
+       "area": 244.1
+    },
+    {
+       "district_id": "89891",
+       "population": 134770,
+       "area": 600.2
+    },
+    {
+       "district_id": "24218",
+       "population": 209112,
+       "area": 608.6
+    },
+    {
+       "district_id": "95960",
+       "population": 148823,
+       "area": 570
+    },
+    {
+       "district_id": "95954",
+       "population": 155194,
+       "area": 175
+    },
+    {
+       "district_id": "24219",
+       "population": 217123,
+       "area": 1032.5
+    },
+    {
+       "district_id": "24220",
+       "population": 72267,
+       "area": 860.2
+    },
+    {
+       "district_id": "83829",
+       "population": 121715,
+       "area": 70.6
+    },
+    {
+       "district_id": "24216",
+       "population": 166361,
+       "area": 208.3
+    },
+    {
+       "district_id": "95959",
+       "population": 141655,
+       "area": 355
+    },
+    {
+       "district_id": "24222",
+       "population": 167129,
+       "area": 171
+    },
+    {
+       "district_id": "83836",
+       "population": 187220,
+       "area": 367.2
+    },
+    {
+       "district_id": "24221",
+       "population": 132395,
+       "area": 191.8
+    },
+    {
+       "district_id": "24215",
+       "population": 99456,
+       "area": 306.4
+    },
+    {
+       "district_id": "06063",
+       "population": 31754,
+       "area": 546.5
+    },
+    {
+       "district_id": "06064",
+       "population": 50528,
+       "area": 911.2
+    },
+    {
+       "district_id": "06066",
+       "population": 40455,
+       "area": 853
+    },
+    {
+       "district_id": "06065",
+       "population": 39354,
+       "area": 606.5
+    },
+    {
+       "district_id": "06060",
+       "population": 32202,
+       "area": 475.4
+    },
+    {
+       "district_id": "83831",
+       "population": 164192,
+       "area": 224.9
+    },
+    {
+       "district_id": "83835",
+       "population": 131062,
+       "area": 427.3
+    },
+    {
+       "district_id": "83832",
+       "population": 109453,
+       "area": 169.1
+    },
+    {
+       "district_id": "83837",
+       "population": 127588,
+       "area": 426.5
+    },
+    {
+       "district_id": "83834",
+       "population": 167262,
+       "area": 312.6
+    },
+    {
+       "district_id": "27256",
+       "population": 188138,
+       "area": 82.6
+    },
+    {
+       "district_id": "83838",
+       "population": 109167,
+       "area": 165.2
+    },
+    {
+       "district_id": "83833",
+       "population": 146051,
+       "area": 230.8
+    },
+    {
+       "district_id": "27261",
+       "population": 161897,
+       "area": 61.1
+    },
+    {
+       "district_id": "27264",
+       "population": 100740,
+       "area": 105.9
+    },
+    {
+       "district_id": "27259",
+       "population": 155360,
+       "area": 155.1
+    },
+    {
+       "district_id": "27262",
+       "population": 157522,
+       "area": 117.8
+    },
+    {
+       "district_id": "27263",
+       "population": 95220,
+       "area": 107.6
+    },
+    {
+       "district_id": "27260",
+       "population": 139191,
+       "area": 95.6
+    },
+    {
+       "district_id": "27258",
+       "population": 156592,
+       "area": 96.9
+    },
+    {
+       "district_id": "92918",
+       "population": 121721,
+       "area": 71.1
+    },
+    {
+       "district_id": "92916",
+       "population": 260833,
+       "area": 29.2
+    },
+    {
+       "district_id": "92917",
+       "population": 137317,
+       "area": 131.9
+    },
+    {
+       "district_id": "92925",
+       "population": 126549,
+       "area": 319.8
+    },
+    {
+       "district_id": "92926",
+       "population": 101965,
+       "area": 126.3
+    },
+    {
+       "district_id": "92927",
+       "population": 124818,
+       "area": 266.9
+    },
+    {
+       "district_id": "92924",
+       "population": 116851,
+       "area": 305.8
+    },
+    {
+       "district_id": "04040",
+       "population": 68546,
+       "area": 107.1
+    },
+    {
+       "district_id": "04043",
+       "population": 51468,
+       "area": 920.7
+    },
+    {
+       "district_id": "06058",
+       "population": 41242,
+       "area": 136.9
+    },
+    {
+       "district_id": "04048",
+       "population": 25662,
+       "area": 456.5
+    },
+    {
+       "district_id": "04042",
+       "population": 57668,
+       "area": 913.1
+    },
+    {
+       "district_id": "04045",
+       "population": 34001,
+       "area": 453.6
+    },
+    {
+       "district_id": "04051",
+       "population": 54347,
+       "area": 606
+    },
+    {
+       "district_id": "04052",
+       "population": 40470,
+       "area": 838
+    },
+    {
+       "district_id": "04050",
+       "population": 23284,
+       "area": 251.7
+    },
+    {
+       "district_id": "06062",
+       "population": 29877,
+       "area": 645.9
+    },
+    {
+       "district_id": "04049",
+       "population": 40579,
+       "area": 358.7
+    },
+    {
+       "district_id": "04053",
+       "population": 31146,
+       "area": 691
+    },
+    {
+       "district_id": "04044",
+       "population": 23804,
+       "area": 357.4
+    },
+    {
+       "district_id": "04046",
+       "population": 21775,
+       "area": 251.2
+    },
+    {
+       "district_id": "48495",
+       "population": 108704,
+       "area": 35.8
+    },
+    {
+       "district_id": "48492",
+       "population": 209641,
+       "area": 23.3
+    },
+    {
+       "district_id": "48490",
+       "population": 158558,
+       "area": 74.5
+    },
+    {
+       "district_id": "48494",
+       "population": 76273,
+       "area": 40.2
+    },
+    {
+       "district_id": "48493",
+       "population": 153940,
+       "area": 63.4
+    },
+    {
+       "district_id": "48491",
+       "population": 190877,
+       "area": 9.5
+    },
+    {
+       "district_id": "48498",
+       "population": 0,
+       "area": 305
+    },
+    {
+       "district_id": "48497",
+       "population": 130845,
+       "area": 733.2
+    },
+    {
+       "district_id": "67660",
+       "population": 56905,
+       "area": 284.1
+    },
+    {
+       "district_id": "67662",
+       "population": 99316,
+       "area": 720.7
+    },
+    {
+       "district_id": "67661",
+       "population": 53518,
+       "area": 1447.8
+    },
+    {
+       "district_id": "67663",
+       "population": 101150,
+       "area": 681.6
+    },
+    {
+       "district_id": "67665",
+       "population": 69014,
+       "area": 806.5
+    },
+    {
+       "district_id": "67664",
+       "population": 72607,
+       "area": 813.7
+    },
+    {
+       "district_id": "67667",
+       "population": 47069,
+       "area": 1119.3
+    },
+    {
+       "district_id": "70689",
+       "population": 90947,
+       "area": 167.3
+    },
+    {
+       "district_id": "70690",
+       "population": 59911,
+       "area": 126.2
+    },
+    {
+       "district_id": "92919",
+       "population": 93733,
+       "area": 66.8
+    },
+    {
+       "district_id": "70688",
+       "population": 49103,
+       "area": 119.4
+    },
+    {
+       "district_id": "70693",
+       "population": 54745,
+       "area": 381.5
+    },
+    {
+       "district_id": "70691",
+       "population": 75208,
+       "area": 1064.3
+    },
+    {
+       "district_id": "92923",
+       "population": 168022,
+       "area": 122
+    },
+    {
+       "district_id": "70697",
+       "population": 73123,
+       "area": 389.6
+    },
+    {
+       "district_id": "60596",
+       "population": 121978,
+       "area": 1.8
+    },
+    {
+       "district_id": "60594",
+       "population": 108575,
+       "area": 183
+    },
+    {
+       "district_id": "60593",
+       "population": 224445,
+       "area": 206
+    },
+    {
+       "district_id": "06061",
+       "population": 47672,
+       "area": 684.1
+    },
+    {
+       "district_id": "60602",
+       "population": 27744,
+       "area": 18
+    },
+    {
+       "district_id": "60600",
+       "population": 131456,
+       "area": 535
+    },
+    {
+       "district_id": "60601",
+       "population": 72820,
+       "area": 739
+    },
+    {
+       "district_id": "60597",
+       "population": 173253,
+       "area": 1.3
+    },
+    {
+       "district_id": "60598",
+       "population": 102686,
+       "area": 1.1
+    },
+    {
+       "district_id": "60599",
+       "population": 105214,
+       "area": 1.2
+    },
+    {
+       "district_id": "60595",
+       "population": 147005,
+       "area": 794
+    },
+    {
+       "district_id": "04047",
+       "population": 49615,
+       "area": 468.4
+    },
+    {
+       "district_id": "70698",
+       "population": 93282,
+       "area": 674.7
+    },
+    {
+       "district_id": "96964",
+       "population": 222991,
+       "area": 249.2
+    },
+    {
+       "district_id": "96969",
+       "population": 138444,
+       "area": 417.1
+    },
+    {
+       "district_id": "96970",
+       "population": 183332,
+       "area": 810
+    },
+    {
+       "district_id": "67666",
+       "population": 84333,
+       "area": 635.7
+    },
+    {
+       "district_id": "96971",
+       "population": 65719,
+       "area": 482.8
+    },
+    {
+       "district_id": "96973",
+       "population": 77819,
+       "area": 708.6
+    },
+    {
+       "district_id": "66643",
+       "population": 355674,
+       "area": 377.2
+    },
+    {
+       "district_id": "66644",
+       "population": 102626,
+       "area": 282.5
+    },
+    {
+       "district_id": "66647",
+       "population": 63816,
+       "area": 1410.4
+    },
+    {
+       "district_id": "96972",
+       "population": 103894,
+       "area": 448.2
+    },
+    {
+       "district_id": "66657",
+       "population": 103842,
+       "area": 288.3
+    },
+    {
+       "district_id": "96967",
+       "population": 135681,
+       "area": 636.4
+    },
+    {
+       "district_id": "96968",
+       "population": 189126,
+       "area": 697.5
+    },
+    {
+       "district_id": "70696",
+       "population": 142298,
+       "area": 1501.2
+    },
+    {
+       "district_id": "96966",
+       "population": 101815,
+       "area": 771.8
+    },
+    {
+       "district_id": "66648",
+       "population": 173,
+       "area": 824.4
+    },
+    {
+       "district_id": "66645",
+       "population": 128347,
+       "area": 1335.1
+    },
+    {
+       "district_id": "66646",
+       "population": 64564,
+       "area": 1765.6
+    },
+    {
+       "district_id": "66651",
+       "population": 150895,
+       "area": 1037.5
+    },
+    {
+       "district_id": "66655",
+       "population": 86127,
+       "area": 356.1
+    },
+    {
+       "district_id": "66653",
+       "population": 94560,
+       "area": 1257.5
+    },
+    {
+       "district_id": "66650",
+       "population": 124577,
+       "area": 614.8
+    },
+    {
+       "district_id": "66654",
+       "population": 207226,
+       "area": 625.8
+    },
+    {
+       "district_id": "66656",
+       "population": 64644,
+       "area": 1256
+    },
+    {
+       "district_id": "75731",
+       "population": 94608,
+       "area": 263.6
+    },
+    {
+       "district_id": "75732",
+       "population": 14533,
+       "area": 191.9
+    },
+    {
+       "district_id": "70695",
+       "population": 90524,
+       "area": 936.2
+    },
+    {
+       "district_id": "75739",
+       "population": 15461,
+       "area": 468.6
+    },
+    {
+       "district_id": "75740",
+       "population": 22575,
+       "area": 430.7
+    },
+    {
+       "district_id": "75736",
+       "population": 21107,
+       "area": 971.1
+    },
+    {
+       "district_id": "75742",
+       "population": 21555,
+       "area": 410.8
+    },
+    {
+       "district_id": "75734",
+       "population": 16704,
+       "area": 776.9
+    },
+    {
+       "district_id": "75737",
+       "population": 29269,
+       "area": 323.7
+    },
+    {
+       "district_id": "75738",
+       "population": 16381,
+       "area": 247.2
+    },
+    {
+       "district_id": "75735",
+       "population": 14636,
+       "area": 1095.7
+    },
+    {
+       "district_id": "42436",
+       "population": 97230,
+       "area": 56.6
+    },
+    {
+       "district_id": "75741",
+       "population": 23757,
+       "area": 727.2
+    },
+    {
+       "district_id": "42449",
+       "population": 71400,
+       "area": 282.2
+    },
+    {
+       "district_id": "42446",
+       "population": 143100,
+       "area": 636.4
+    },
+    {
+       "district_id": "42443",
+       "population": 130350,
+       "area": 302.1
+    },
+    {
+       "district_id": "42440",
+       "population": 104900,
+       "area": 203.5
+    },
+    {
+       "district_id": "42444",
+       "population": 101140,
+       "area": 1262.7
+    },
+    {
+       "district_id": "42439",
+       "population": 115790,
+       "area": 1096.8
+    },
+    {
+       "district_id": "42447",
+       "population": 116130,
+       "area": 759.6
+    },
+    {
+       "district_id": "42448",
+       "population": 81610,
+       "area": 117.4
+    },
+    {
+       "district_id": "42442",
+       "population": 99350,
+       "area": 222.5
+    },
+    {
+       "district_id": "42445",
+       "population": 133220,
+       "area": 353.9
+    },
+    {
+       "district_id": "66649",
+       "population": 62648,
+       "area": 357.8
+    },
+    {
+       "district_id": "42441",
+       "population": 29300,
+       "area": 637.7
+    },
+    {
+       "district_id": "35347",
+       "population": 139786,
+       "area": 87.6
+    },
+    {
+       "district_id": "35352",
+       "population": 133646,
+       "area": 144.2
+    },
+    {
+       "district_id": "35350",
+       "population": 119299,
+       "area": 175.4
+    },
+    {
+       "district_id": "35349",
+       "population": 117760,
+       "area": 120.9
+    },
+    {
+       "district_id": "35353",
+       "population": 177864,
+       "area": 168.8
+    },
+    {
+       "district_id": "35351",
+       "population": 114350,
+       "area": 164.9
+    },
+    {
+       "district_id": "30290",
+       "population": 165652,
+       "area": 282.9
+    },
+    {
+       "district_id": "30296",
+       "population": 108791,
+       "area": 106.2
+    },
+    {
+       "district_id": "30295",
+       "population": 134009,
+       "area": 110.1
+    },
+    {
+       "district_id": "30297",
+       "population": 139994,
+       "area": 114
+    },
+    {
+       "district_id": "30293",
+       "population": 127429,
+       "area": 115.1
+    },
+    {
+       "district_id": "30291",
+       "population": 117240,
+       "area": 111
+    },
+    {
+       "district_id": "30292",
+       "population": 164830,
+       "area": 165.3
+    },
+    {
+       "district_id": "30299",
+       "population": 144382,
+       "area": 136.8
+    },
+    {
+       "district_id": "30294",
+       "population": 157313,
+       "area": 160.5
+    },
+    {
+       "district_id": "30300",
+       "population": 127181,
+       "area": 123.5
+    },
+    {
+       "district_id": "30298",
+       "population": 157488,
+       "area": 170.2
+    },
+    {
+       "district_id": "42437",
+       "population": 37770,
+       "area": 59
+    },
+    {
+       "district_id": "31308",
+       "population": 48100,
+       "area": 45.9
+    },
+    {
+       "district_id": "31309",
+       "population": 55000,
+       "area": 46.8
+    },
+    {
+       "district_id": "31307",
+       "population": 110400,
+       "area": 29.6
+    },
+    {
+       "district_id": "31303",
+       "population": 106000,
+       "area": 14.5
+    },
+    {
+       "district_id": "31304",
+       "population": 172300,
+       "area": 11.3
+    },
+    {
+       "district_id": "31305",
+       "population": 221000,
+       "area": 11.9
+    },
+    {
+       "district_id": "31312",
+       "population": 174400,
+       "area": 104.2
+    },
+    {
+       "district_id": "31313",
+       "population": 143900,
+       "area": 117.7
+    },
+    {
+       "district_id": "31318",
+       "population": 1100,
+       "area": 3.1
+    },
+    {
+       "district_id": "31317",
+       "population": 32300,
+       "area": 325.6
+    },
+    {
+       "district_id": "31314",
+       "population": 137400,
+       "area": 108.9
+    },
+    {
+       "district_id": "31311",
+       "population": 321100,
+       "area": 261.9
+    },
+    {
+       "district_id": "31316",
+       "population": 177300,
+       "area": 183.3
+    },
+    {
+       "district_id": "66652",
+       "population": 71128,
+       "area": 1336.3
+    },
+    {
+       "district_id": "79760",
+       "population": 193632,
+       "area": 7.7
+    },
+    {
+       "district_id": "79769",
+       "population": 147168,
+       "area": 49.7
+    },
+    {
+       "district_id": "79770",
+       "population": 196333,
+       "area": 4.9
+    },
+    {
+       "district_id": "79774",
+       "population": 178615,
+       "area": 4.3
+    },
+    {
+       "district_id": "79773",
+       "population": 186727,
+       "area": 4.2
+    },
+    {
+       "district_id": "79775",
+       "population": 258945,
+       "area": 7.2
+    },
+    {
+       "district_id": "79778",
+       "population": 310178,
+       "area": 35.7
+    },
+    {
+       "district_id": "79763",
+       "population": 290620,
+       "area": 114
+    },
+    {
+       "district_id": "79776",
+       "population": 431969,
+       "area": 19.2
+    },
+    {
+       "district_id": "70694",
+       "population": 98986,
+       "area": 664.1
+    },
+    {
+       "district_id": "79771",
+       "population": 238558,
+       "area": 5.7
+    },
+    {
+       "district_id": "79777",
+       "population": 686474,
+       "area": 51.9
+    },
+    {
+       "district_id": "79761",
+       "population": 510326,
+       "area": 52.8
+    },
+    {
+       "district_id": "79765",
+       "population": 487985,
+       "area": 20.8
+    },
+    {
+       "district_id": "79768",
+       "population": 182477,
+       "area": 4.9
+    },
+    {
+       "district_id": "79764",
+       "population": 634146,
+       "area": 19.7
+    },
+    {
+       "district_id": "79766",
+       "population": 459029,
+       "area": 22.4
+    },
+    {
+       "district_id": "31306",
+       "population": 112700,
+       "area": 103.7
+    },
+    {
+       "district_id": "79767",
+       "population": 464493,
+       "area": 16.1
+    },
+    {
+       "district_id": "79762",
+       "population": 528413,
+       "area": 47.8
+    },
+    {
+       "district_id": "79785",
+       "population": 591451,
+       "area": 252.7
+    },
+    {
+       "district_id": "79787",
+       "population": 74960,
+       "area": 704.2
+    },
+    {
+       "district_id": "79786",
+       "population": 139225,
+       "area": 100.4
+    },
+    {
+       "district_id": "79783",
+       "population": 403038,
+       "area": 434.5
+    },
+    {
+       "district_id": "33323",
+       "population": 111637,
+       "area": 73.9
+    },
+    {
+       "district_id": "33329",
+       "population": 129542,
+       "area": 130
+    },
+    {
+       "district_id": "31315",
+       "population": 150500,
+       "area": 193.4
+    },
+    {
+       "district_id": "33330",
+       "population": 184802,
+       "area": 131
+    },
+    {
+       "district_id": "30288",
+       "population": 230191,
+       "area": 72.7
+    },
+    {
+       "district_id": "33328",
+       "population": 98720,
+       "area": 79.4
+    },
+    {
+       "district_id": "33326",
+       "population": 102979,
+       "area": 71.8
+    },
+    {
+       "district_id": "33331",
+       "population": 113762,
+       "area": 103.3
+    },
+    {
+       "district_id": "33332",
+       "population": 86425,
+       "area": 78.6
+    },
+    {
+       "district_id": "79772",
+       "population": 230596,
+       "area": 5.1
+    },
+    {
+       "district_id": "70692",
+       "population": 116294,
+       "area": 853.3
+    },
+    {
+       "district_id": "33327",
+       "population": 138861,
+       "area": 92.4
+    },
+    {
+       "district_id": "33325",
+       "population": 119229,
+       "area": 75.2
+    },
+    {
+       "district_id": "56568",
+       "population": 405600,
+       "area": 254.3
+    },
+    {
+       "district_id": "56569",
+       "population": 125900,
+       "area": 327
+    },
+    {
+       "district_id": "56572",
+       "population": 239700,
+       "area": 1108
+    },
+    {
+       "district_id": "56570",
+       "population": 105200,
+       "area": 547.2
+    },
+    {
+       "district_id": "56574",
+       "population": 137600,
+       "area": 337.6
+    },
+    {
+       "district_id": "56573",
+       "population": 36700,
+       "area": 1167.2
+    },
+    {
+       "district_id": "56576",
+       "population": 0,
+       "area": 496.3
+    },
+    {
+       "district_id": "56571",
+       "population": 131300,
+       "area": 561.8
+    },
+    {
+       "district_id": "79784",
+       "population": 422471,
+       "area": 109.2
+    },
+    {
+       "district_id": "64623",
+       "population": 66418,
+       "area": 200.1
+    },
+    {
+       "district_id": "64622",
+       "population": 227740,
+       "area": 260.8
+    },
+    {
+       "district_id": "64624",
+       "population": 37478,
+       "area": 287.2
+    },
+    {
+       "district_id": "64627",
+       "population": 71768,
+       "area": 974.6
+    },
+    {
+       "district_id": "64639",
+       "population": 70045,
+       "area": 718.9
+    },
+    {
+       "district_id": "64633",
+       "population": 115240,
+       "area": 641
+    },
+    {
+       "district_id": "64626",
+       "population": 108373,
+       "area": 985.3
+    },
+    {
+       "district_id": "64634",
+       "population": 41685,
+       "area": 502.5
+    },
+    {
+       "district_id": "64631",
+       "population": 68663,
+       "area": 721.9
+    },
+    {
+       "district_id": "64628",
+       "population": 95289,
+       "area": 1119.6
+    },
+    {
+       "district_id": "64635",
+       "population": 54172,
+       "area": 868.6
+    },
+    {
+       "district_id": "64625",
+       "population": 65540,
+       "area": 1840.9
+    },
+    {
+       "district_id": "64630",
+       "population": 47861,
+       "area": 1439.7
+    },
+    {
+       "district_id": "64629",
+       "population": 62772,
+       "area": 1127.2
+    },
+    {
+       "district_id": "64638",
+       "population": 76989,
+       "area": 505.2
+    },
+    {
+       "district_id": "91899",
+       "population": 239057,
+       "area": 103.6
+    },
+    {
+       "district_id": "91900",
+       "population": 48610,
+       "area": 100.5
+    },
+    {
+       "district_id": "33333",
+       "population": 78410,
+       "area": 94.6
+    },
+    {
+       "district_id": "91909",
+       "population": 118568,
+       "area": 590.5
+    },
+    {
+       "district_id": "91908",
+       "population": 125674,
+       "area": 400.3
+    },
+    {
+       "district_id": "91905",
+       "population": 154328,
+       "area": 285.4
+    },
+    {
+       "district_id": "91911",
+       "population": 101832,
+       "area": 589.3
+    },
+    {
+       "district_id": "91906",
+       "population": 216948,
+       "area": 639.4
+    },
+    {
+       "district_id": "91907",
+       "population": 139749,
+       "area": 439.5
+    },
+    {
+       "district_id": "91903",
+       "population": 174818,
+       "area": 1039.6
+    },
+    {
+       "district_id": "91912",
+       "population": 20255,
+       "area": 24.6
+    },
+    {
+       "district_id": "91902",
+       "population": 83056,
+       "area": 473.3
+    },
+    {
+       "district_id": "91904",
+       "population": 146269,
+       "area": 422.9
+    },
+    {
+       "district_id": "91913",
+       "population": 71549,
+       "area": 432.7
+    },
+    {
+       "district_id": "91910",
+       "population": 92620,
+       "area": 394.4
+    },
+    {
+       "district_id": "62608",
+       "population": 161048,
+       "area": 432.9
+    },
+    {
+       "district_id": "62610",
+       "population": 43643,
+       "area": 1493.7
+    },
+    {
+       "district_id": "62615",
+       "population": 68395,
+       "area": 845
+    },
+    {
+       "district_id": "62613",
+       "population": 24428,
+       "area": 1371.2
+    },
+    {
+       "district_id": "62612",
+       "population": 43510,
+       "area": 508.7
+    },
+    {
+       "district_id": "56575",
+       "population": 23200,
+       "area": 338.5
+    },
+    {
+       "district_id": "62614",
+       "population": 24786,
+       "area": 913.9
+    },
+    {
+       "district_id": "62611",
+       "population": 50842,
+       "area": 843.8
+    },
+    {
+       "district_id": "62616",
+       "population": 47520,
+       "area": 1431.7
+    },
+    {
+       "district_id": "62617",
+       "population": 24854,
+       "area": 859.3
+    },
+    {
+       "district_id": "62618",
+       "population": 6850,
+       "area": 980.2
+    },
+    {
+       "district_id": "93930",
+       "population": 75017,
+       "area": 119.1
+    },
+    {
+       "district_id": "64632",
+       "population": 107727,
+       "area": 1693.9
+    },
+    {
+       "district_id": "93937",
+       "population": 71766,
+       "area": 144.5
+    },
+    {
+       "district_id": "93933",
+       "population": 81688,
+       "area": 139.1
+    },
+    {
+       "district_id": "93932",
+       "population": 104193,
+       "area": 153.4
+    },
+    {
+       "district_id": "64637",
+       "population": 79640,
+       "area": 1623.7
+    },
+    {
+       "district_id": "93936",
+       "population": 83975,
+       "area": 254
+    },
+    {
+       "district_id": "91914",
+       "population": 28948,
+       "area": 412.8
+    },
+    {
+       "district_id": "93935",
+       "population": 98888,
+       "area": 230.2
+    },
+    {
+       "district_id": "93934",
+       "population": 194432,
+       "area": 483.7
+    },
+    {
+       "district_id": "12107",
+       "population": 43060,
+       "area": 2679.3
+    },
+    {
+       "district_id": "12108",
+       "population": 75130,
+       "area": 1029.2
+    },
+    {
+       "district_id": "12109",
+       "population": 79720,
+       "area": 1527
+    },
+    {
+       "district_id": "12106",
+       "population": 53270,
+       "area": 684.5
+    },
+    {
+       "district_id": "12111",
+       "population": 54080,
+       "area": 897.3
+    },
+    {
+       "district_id": "12110",
+       "population": 63280,
+       "area": 792.5
+    },
+    {
+       "district_id": "17154",
+       "population": 42868,
+       "area": 255
+    },
+    {
+       "district_id": "17150",
+       "population": 53557,
+       "area": 778
+    },
+    {
+       "district_id": "17148",
+       "population": 93541,
+       "area": 144
+    },
+    {
+       "district_id": "17153",
+       "population": 110384,
+       "area": 550
+    },
+    {
+       "district_id": "17151",
+       "population": 32443,
+       "area": 210
+    },
+    {
+       "district_id": "17157",
+       "population": 138909,
+       "area": 587
+    },
+    {
+       "district_id": "17152",
+       "population": 93917,
+       "area": 377
+    },
+    {
+       "district_id": "17156",
+       "population": 54795,
+       "area": 571
+    },
+    {
+       "district_id": "17159",
+       "population": 58677,
+       "area": 315
+    },
+    {
+       "district_id": "17155",
+       "population": 82556,
+       "area": 532
+    },
+    {
+       "district_id": "93931",
+       "population": 60393,
+       "area": 78.5
+    },
+    {
+       "district_id": "10085",
+       "population": 60529,
+       "area": 683
+    },
+    {
+       "district_id": "17158",
+       "population": 62678,
+       "area": 289
+    },
+    {
+       "district_id": "10086",
+       "population": 106969,
+       "area": 685
+    },
+    {
+       "district_id": "10080",
+       "population": 110218,
+       "area": 228
+    },
+    {
+       "district_id": "10087",
+       "population": 82817,
+       "area": 818
+    },
+    {
+       "district_id": "10082",
+       "population": 75757,
+       "area": 1057
+    },
+    {
+       "district_id": "10084",
+       "population": 35766,
+       "area": 234
+    },
+    {
+       "district_id": "10089",
+       "population": 84709,
+       "area": 1424
+    },
+    {
+       "district_id": "36356",
+       "population": 251628,
+       "area": 46.4
+    },
+    {
+       "district_id": "36365",
+       "population": 190291,
+       "area": 237.8
+    },
+    {
+       "district_id": "36366",
+       "population": 259786,
+       "area": 228.1
+    },
+    {
+       "district_id": "36358",
+       "population": 70152,
+       "area": 74.5
+    },
+    {
+       "district_id": "36361",
+       "population": 179715,
+       "area": 258.9
+    },
+    {
+       "district_id": "36362",
+       "population": 193919,
+       "area": 163.9
+    },
+    {
+       "district_id": "36363",
+       "population": 178103,
+       "area": 144
+    },
+    {
+       "district_id": "36360",
+       "population": 229238,
+       "area": 261.1
+    },
+    {
+       "district_id": "40412",
+       "population": 315421,
+       "area": 105.1
+    },
+    {
+       "district_id": "40413",
+       "population": 55481,
+       "area": 27.8
+    },
+    {
+       "district_id": "40432",
+       "population": 101443,
+       "area": 169.8
+    },
+    {
+       "district_id": "40414",
+       "population": 64201,
+       "area": 134.8
+    },
+    {
+       "district_id": "40424",
+       "population": 106091,
+       "area": 603.3
+    },
+    {
+       "district_id": "40422",
+       "population": 69648,
+       "area": 1738.3
+    },
+    {
+       "district_id": "40425",
+       "population": 279576,
+       "area": 305
+    },
+    {
+       "district_id": "40427",
+       "population": 194696,
+       "area": 350.1
+    },
+    {
+       "district_id": "40431",
+       "population": 113170,
+       "area": 159.2
+    },
+    {
+       "district_id": "10083",
+       "population": 58593,
+       "area": 554
+    },
+    {
+       "district_id": "40417",
+       "population": 74347,
+       "area": 2094.3
+    },
+    {
+       "district_id": "10088",
+       "population": 59172,
+       "area": 681
+    },
+    {
+       "district_id": "40430",
+       "population": 155803,
+       "area": 292.5
+    },
+    {
+       "district_id": "12112",
+       "population": 26270,
+       "area": 1388
+    },
+    {
+       "district_id": "40429",
+       "population": 195142,
+       "area": 345.9
+    },
+    {
+       "district_id": "40419",
+       "population": 129146,
+       "area": 617.8
+    },
+    {
+       "district_id": "40415",
+       "population": 67273,
+       "area": 1890.9
+    },
+    {
+       "district_id": "36359",
+       "population": 130763,
+       "area": 152.8
+    },
+    {
+       "district_id": "36364",
+       "population": 167015,
+       "area": 116.1
+    },
+    {
+       "district_id": "40421",
+       "population": 262454,
+       "area": 436.2
+    },
+    {
+       "district_id": "40423",
+       "population": 134112,
+       "area": 729.2
+    },
+    {
+       "district_id": "40420",
+       "population": 122847,
+       "area": 942.7
+    },
+    {
+       "district_id": "40428",
+       "population": 223302,
+       "area": 1130.4
+    },
+    {
+       "district_id": "40418",
+       "population": 72912,
+       "area": 2811.3
+    },
+    {
+       "district_id": "01001",
+       "population": 246200,
+       "area": 9.2
+    },
+    {
+       "district_id": "01021",
+       "population": 322800,
+       "area": 45.3
+    },
+    {
+       "district_id": "01006",
+       "population": 414300,
+       "area": 10
+    },
+    {
+       "district_id": "01268",
+       "population": 300900,
+       "area": 49.6
+    },
+    {
+       "district_id": "01007",
+       "population": 316300,
+       "area": 10.3
+    },
+    {
+       "district_id": "01002",
+       "population": 159300,
+       "area": 5.3
+    },
+    {
+       "district_id": "01008",
+       "population": 374000,
+       "area": 40.3
+    },
+    {
+       "district_id": "12105",
+       "population": 36150,
+       "area": 70.8
+    },
+    {
+       "district_id": "40416",
+       "population": 56497,
+       "area": 1057.7
+    },
+    {
+       "district_id": "40426",
+       "population": 270382,
+       "area": 547.9
+    },
+    {
+       "district_id": "01019",
+       "population": 223400,
+       "area": 32.2
+    },
+    {
+       "district_id": "01003",
+       "population": 160300,
+       "area": 24.4
+    },
+    {
+       "district_id": "01009",
+       "population": 275100,
+       "area": 9.1
+    },
+    {
+       "district_id": "01004",
+       "population": 279200,
+       "area": 59.8
+    },
+    {
+       "district_id": "01277",
+       "population": 321300,
+       "area": 237.4
+    },
+    {
+       "district_id": "01269",
+       "population": 141300,
+       "area": 117.4
+    },
+    {
+       "district_id": "01273",
+       "population": 157800,
+       "area": 78
+    },
+    {
+       "district_id": "01018",
+       "population": 271000,
+       "area": 116.7
+    },
+    {
+       "district_id": "01005",
+       "population": 261800,
+       "area": 12.3
+    },
+    {
+       "district_id": "01282",
+       "population": 190400,
+       "area": 226.3
+    },
+    {
+       "district_id": "01280",
+       "population": 189500,
+       "area": 171.4
+    },
+    {
+       "district_id": "01271",
+       "population": 275900,
+       "area": 423
+    },
+    {
+       "district_id": "01274",
+       "population": 218800,
+       "area": 85
+    },
+    {
+       "district_id": "01250",
+       "population": 218800,
+       "area": 142.5
+    },
+    {
+       "district_id": "01272",
+       "population": 178000,
+       "area": 118.6
+    },
+    {
+       "district_id": "01017",
+       "population": 384800,
+       "area": 185.6
+    },
+    {
+       "district_id": "01275",
+       "population": 180700,
+       "area": 151.1
+    },
+    {
+       "district_id": "01016",
+       "population": 330400,
+       "area": 304.8
+    },
+    {
+       "district_id": "01276",
+       "population": 201100,
+       "area": 187.4
+    },
+    {
+       "district_id": "01278",
+       "population": 192100,
+       "area": 123.9
+    },
+    {
+       "district_id": "01020",
+       "population": 236700,
+       "area": 63.5
+    },
+    {
+       "district_id": "01279",
+       "population": 243400,
+       "area": 130.4
+    },
+    {
+       "district_id": "01281",
+       "population": 197200,
+       "area": 188.2
+    },
+    {
+       "district_id": "37369",
+       "population": 118934,
+       "area": 46.8
+    },
+    {
+       "district_id": "37375",
+       "population": 139542,
+       "area": 142.6
+    },
+    {
+       "district_id": "37373",
+       "population": 120947,
+       "area": 176.7
+    },
+    {
+       "district_id": "37374",
+       "population": 69224,
+       "area": 103.5
+    },
+    {
+       "district_id": "37377",
+       "population": 115410,
+       "area": 146.1
+    },
+    {
+       "district_id": "37372",
+       "population": 149449,
+       "area": 450.6
+    },
+    {
+       "district_id": "58582",
+       "population": 172304,
+       "area": 79.2
+    },
+    {
+       "district_id": "58584",
+       "population": 26685,
+       "area": 1027.2
+    },
+    {
+       "district_id": "58586",
+       "population": 91937,
+       "area": 253.6
+    },
+    {
+       "district_id": "58587",
+       "population": 129990,
+       "area": 342
+    },
+    {
+       "district_id": "58585",
+       "population": 75208,
+       "area": 771.8
+    },
+    {
+       "district_id": "58588",
+       "population": 41229,
+       "area": 318.3
+    },
+    {
+       "district_id": "25227",
+       "population": 197361,
+       "area": 111.5
+    },
+    {
+       "district_id": "25228",
+       "population": 71005,
+       "area": 65.2
+    },
+    {
+       "district_id": "25235",
+       "population": 131003,
+       "area": 233.9
+    },
+    {
+       "district_id": "25230",
+       "population": 108033,
+       "area": 302.9
+    },
+    {
+       "district_id": "25237",
+       "population": 103394,
+       "area": 98.4
+    },
+    {
+       "district_id": "25233",
+       "population": 97609,
+       "area": 157.4
+    },
+    {
+       "district_id": "25231",
+       "population": 108166,
+       "area": 341.5
+    },
+    {
+       "district_id": "25236",
+       "population": 77867,
+       "area": 155.6
+    },
+    {
+       "district_id": "25240",
+       "population": 79728,
+       "area": 688.6
+    },
+    {
+       "district_id": "25232",
+       "population": 112570,
+       "area": 194.7
+    },
+    {
+       "district_id": "25238",
+       "population": 121460,
+       "area": 621.1
+    },
+    {
+       "district_id": "25234",
+       "population": 84903,
+       "area": 438.2
+    },
+    {
+       "district_id": "37376",
+       "population": 172260,
+       "area": 215.7
+    },
+    {
+       "district_id": "37370",
+       "population": 58665,
+       "area": 104.9
+    },
+    {
+       "district_id": "54557",
+       "population": 101564,
+       "area": 492.8
+    },
+    {
+       "district_id": "58589",
+       "population": 58497,
+       "area": 563.3
+    },
+    {
+       "district_id": "54555",
+       "population": 158664,
+       "area": 110.6
+    },
+    {
+       "district_id": "54564",
+       "population": 118173,
+       "area": 265.6
+    },
+    {
+       "district_id": "54558",
+       "population": 60009,
+       "area": 1033.3
+    },
+    {
+       "district_id": "54561",
+       "population": 47763,
+       "area": 893.2
+    },
+    {
+       "district_id": "54562",
+       "population": 119247,
+       "area": 623.7
+    },
+    {
+       "district_id": "54559",
+       "population": 125374,
+       "area": 407.6
+    },
+    {
+       "district_id": "20178",
+       "population": 93072,
+       "area": 77.9
+    },
+    {
+       "district_id": "20185",
+       "population": 67743,
+       "area": 699.4
+    },
+    {
+       "district_id": "25239",
+       "population": 77526,
+       "area": 125.7
+    },
+    {
+       "district_id": "20181",
+       "population": 53744,
+       "area": 1094.2
+    },
+    {
+       "district_id": "20183",
+       "population": 76337,
+       "area": 619.1
+    },
+    {
+       "district_id": "20187",
+       "population": 76110,
+       "area": 704.2
+    },
+    {
+       "district_id": "20189",
+       "population": 27043,
+       "area": 1189.6
+    },
+    {
+       "district_id": "54560",
+       "population": 55964,
+       "area": 937.8
+    },
+    {
+       "district_id": "20186",
+       "population": 115795,
+       "area": 807.6
+    },
+    {
+       "district_id": "20188",
+       "population": 80373,
+       "area": 986.4
+    },
+    {
+       "district_id": "20180",
+       "population": 61240,
+       "area": 1016.7
+    },
+    {
+       "district_id": "20182",
+       "population": 51288,
+       "area": 567.4
+    },
+    {
+       "district_id": "20184",
+       "population": 55173,
+       "area": 547.6
+    },
+    {
+       "district_id": "44450",
+       "population": 116903,
+       "area": 156
+    },
+    {
+       "district_id": "44458",
+       "population": 105700,
+       "area": 162
+    },
+    {
+       "district_id": "44455",
+       "population": 183181,
+       "area": 2115
+    },
+    {
+       "district_id": "44457",
+       "population": 142718,
+       "area": 1402
+    },
+    {
+       "district_id": "44452",
+       "population": 49763,
+       "area": 1394
+    },
+    {
+       "district_id": "44454",
+       "population": 105997,
+       "area": 448
+    },
+    {
+       "district_id": "49503",
+       "population": 93851,
+       "area": 63.6
+    },
+    {
+       "district_id": "49507",
+       "population": 207070,
+       "area": 216.3
+    },
+    {
+       "district_id": "49502",
+       "population": 112747,
+       "area": 94
+    },
+    {
+       "district_id": "44453",
+       "population": 78755,
+       "area": 1129
+    },
+    {
+       "district_id": "49515",
+       "population": 39475,
+       "area": 847
+    },
+    {
+       "district_id": "49506",
+       "population": 151776,
+       "area": 578.5
+    },
+    {
+       "district_id": "49505",
+       "population": 24922,
+       "area": 821.9
+    },
+    {
+       "district_id": "54563",
+       "population": 106625,
+       "area": 258.8
+    },
+    {
+       "district_id": "49508",
+       "population": 125601,
+       "area": 309.2
+    },
+    {
+       "district_id": "49512",
+       "population": 39275,
+       "area": 496.9
+    },
+    {
+       "district_id": "49510",
+       "population": 24175,
+       "area": 1846.6
+    },
+    {
+       "district_id": "49516",
+       "population": 27317,
+       "area": 826.4
+    },
+    {
+       "district_id": "49517",
+       "population": 143195,
+       "area": 555.8
+    },
+    {
+       "district_id": "49519",
+       "population": 32020,
+       "area": 471.6
+    },
+    {
+       "district_id": "49518",
+       "population": 80091,
+       "area": 255.7
+    },
+    {
+       "district_id": "49511",
+       "population": 24052,
+       "area": 1153.3
+    },
+    {
+       "district_id": "44456",
+       "population": 89908,
+       "area": 1194
+    },
+    {
+       "district_id": "49509",
+       "population": 84348,
+       "area": 257.3
+    },
+    {
+       "district_id": "49504",
+       "population": 18148,
+       "area": 913.7
+    },
+    {
+       "district_id": "49513",
+       "population": 181601,
+       "area": 412.4
+    },
+    {
+       "district_id": "49514",
+       "population": 71126,
+       "area": 454.6
+    },
+    {
+       "district_id": "80794",
+       "population": 136933,
+       "area": 81.7
+    },
+    {
+       "district_id": "80803",
+       "population": 153694,
+       "area": 287.9
+    },
+    {
+       "district_id": "80795",
+       "population": 43451,
+       "area": 204.4
+    },
+    {
+       "district_id": "80806",
+       "population": 174334,
+       "area": 220.5
+    },
+    {
+       "district_id": "80807",
+       "population": 174567,
+       "area": 215.1
+    },
+    {
+       "district_id": "80808",
+       "population": 100434,
+       "area": 155.2
+    },
+    {
+       "district_id": "80802",
+       "population": 223734,
+       "area": 425.1
+    },
+    {
+       "district_id": "80801",
+       "population": 60843,
+       "area": 428.9
+    },
+    {
+       "district_id": "80798",
+       "population": 28950,
+       "area": 300
+    },
+    {
+       "district_id": "80796",
+       "population": 49277,
+       "area": 501.9
+    },
+    {
+       "district_id": "80799",
+       "population": 77951,
+       "area": 422.9
+    },
+    {
+       "district_id": "80805",
+       "population": 62214,
+       "area": 106.4
+    },
+    {
+       "district_id": "80800",
+       "population": 55267,
+       "area": 467.9
+    },
+    {
+       "district_id": "80804",
+       "population": 92044,
+       "area": 299.1
+    },
+    {
+       "district_id": "80797",
+       "population": 50962,
+       "area": 378.1
+    },
+    {
+       "district_id": "22195",
+       "population": 188600,
+       "area": 386.5
+    },
+    {
+       "district_id": "22193",
+       "population": 235300,
+       "area": 275.1
+    },
+    {
+       "district_id": "22194",
+       "population": 99400,
+       "area": 519.6
+    },
+    {
+       "district_id": "22196",
+       "population": 144200,
+       "area": 255.5
+    },
+    {
+       "district_id": "22205",
+       "population": 169000,
+       "area": 396.6
+    },
+    {
+       "district_id": "22206",
+       "population": 134400,
+       "area": 301.8
+    },
+    {
+       "district_id": "22202",
+       "population": 20900,
+       "area": 606.5
+    },
+    {
+       "district_id": "22198",
+       "population": 30500,
+       "area": 470.1
+    },
+    {
+       "district_id": "22207",
+       "population": 5700,
+       "area": 50.1
+    },
+    {
+       "district_id": "22200",
+       "population": 37100,
+       "area": 326.9
+    },
+    {
+       "district_id": "22201",
+       "population": 56700,
+       "area": 511.6
+    },
+    {
+       "district_id": "22204",
+       "population": 50800,
+       "area": 843.5
+    },
+    {
+       "district_id": "22199",
+       "population": 49000,
+       "area": 652.1
+    },
+    {
+       "district_id": "94944",
+       "population": 107829,
+       "area": 368.2
+    },
+    {
+       "district_id": "94948",
+       "population": 80775,
+       "area": 242.2
+    },
+    {
+       "district_id": "94950",
+       "population": 166059,
+       "area": 468.7
+    },
+    {
+       "district_id": "94945",
+       "population": 63799,
+       "area": 264.8
+    },
+    {
+       "district_id": "94942",
+       "population": 102149,
+       "area": 236.3
+    },
+    {
+       "district_id": "94943",
+       "population": 159963,
+       "area": 352.8
+    },
+    {
+       "district_id": "22203",
+       "population": 43900,
+       "area": 581.8
+    },
+    {
+       "district_id": "94947",
+       "population": 157557,
+       "area": 373.7
+    },
+    {
+       "district_id": "94946",
+       "population": 113701,
+       "area": 263.7
+    },
+    {
+       "district_id": "94949",
+       "population": 86746,
+       "area": 287.5
+    },
+    {
+       "district_id": "94951",
+       "population": 134226,
+       "area": 378
+    },
+    {
+       "district_id": "11094",
+       "population": 53998,
+       "area": 64.3
+    },
+    {
+       "district_id": "11095",
+       "population": 11007,
+       "area": 112.6
+    },
+    {
+       "district_id": "11100",
+       "population": 113584,
+       "area": 1639.3
+    },
+    {
+       "district_id": "11101",
+       "population": 61158,
+       "area": 1209
+    },
+    {
+       "district_id": "11102",
+       "population": 44179,
+       "area": 443.5
+    },
+    {
+       "district_id": "11097",
+       "population": 42380,
+       "area": 1199.4
+    },
+    {
+       "district_id": "11096",
+       "population": 35456,
+       "area": 1573.7
+    },
+    {
+       "district_id": "94941",
+       "population": 137899,
+       "area": 76
+    },
+    {
+       "district_id": "11103",
+       "population": 45554,
+       "area": 1498.1
+    },
+    {
+       "district_id": "11098",
+       "population": 51306,
+       "area": 685.3
+    },
+    {
+       "district_id": "11099",
+       "population": 79447,
+       "area": 1137.8
+    },
+    {
+       "district_id": "14116",
+       "population": 102600,
+       "area": 323.5
+    },
+    {
+       "district_id": "14121",
+       "population": 63400,
+       "area": 1098.6
+    },
+    {
+       "district_id": "14125",
+       "population": 154100,
+       "area": 1426.7
+    },
+    {
+       "district_id": "14123",
+       "population": 108900,
+       "area": 1071.7
+    },
+    {
+       "district_id": "14120",
+       "population": 93600,
+       "area": 1425.4
+    },
+    {
+       "district_id": "14122",
+       "population": 118800,
+       "area": 1234.2
+    },
+    {
+       "district_id": "14118",
+       "population": 63100,
+       "area": 1056
+    },
+    {
+       "district_id": "14126",
+       "population": 141800,
+       "area": 1639.9
+    },
+    {
+       "district_id": "14127",
+       "population": 45100,
+       "area": 1473.4
+    },
+    {
+       "district_id": "14119",
+       "population": 164300,
+       "area": 1533.4
+    },
+    {
+       "district_id": "14128",
+       "population": 59500,
+       "area": 982.9
+    },
+    {
+       "district_id": "14124",
+       "population": 76900,
+       "area": 857.8
+    },
+    {
+       "district_id": "34336",
+       "population": 186100,
+       "area": 68.1
+    },
+    {
+       "district_id": "34340",
+       "population": 233100,
+       "area": 199.3
+    },
+    {
+       "district_id": "34339",
+       "population": 248700,
+       "area": 210.3
+    },
+    {
+       "district_id": "34343",
+       "population": 212300,
+       "area": 202
+    },
+    {
+       "district_id": "34338",
+       "population": 232000,
+       "area": 210
+    },
+    {
+       "district_id": "34341",
+       "population": 248900,
+       "area": 268.4
+    },
+    {
+       "district_id": "34342",
+       "population": 209800,
+       "area": 231.3
+    },
+    {
+       "district_id": "34334",
+       "population": 218300,
+       "area": 196.9
+    },
+    {
+       "district_id": "72703",
+       "population": 130899,
+       "area": 140
+    },
+    {
+       "district_id": "72711",
+       "population": 65589,
+       "area": 237.5
+    },
+    {
+       "district_id": "72708",
+       "population": 135589,
+       "area": 580.9
+    },
+    {
+       "district_id": "72707",
+       "population": 108702,
+       "area": 435.6
+    },
+    {
+       "district_id": "72710",
+       "population": 142799,
+       "area": 260
+    },
+    {
+       "district_id": "72709",
+       "population": 144875,
+       "area": 82.9
+    },
+    {
+       "district_id": "72705",
+       "population": 97771,
+       "area": 861
+    },
+    {
+       "district_id": "72706",
+       "population": 126514,
+       "area": 1103.2
+    },
+    {
+       "district_id": "72712",
+       "population": 158765,
+       "area": 340.2
+    },
+    {
+       "district_id": "19165",
+       "population": 66054,
+       "area": 96.7
+    },
+    {
+       "district_id": "19164",
+       "population": 315196,
+       "area": 170.5
+    },
+    {
+       "district_id": "19172",
+       "population": 171307,
+       "area": 258.9
+    },
+    {
+       "district_id": "19171",
+       "population": 164730,
+       "area": 573.4
+    },
+    {
+       "district_id": "19167",
+       "population": 88175,
+       "area": 513.5
+    },
+    {
+       "district_id": "19169",
+       "population": 114300,
+       "area": 454.4
+    },
+    {
+       "district_id": "19173",
+       "population": 144940,
+       "area": 252.2
+    },
+    {
+       "district_id": "19168",
+       "population": 107409,
+       "area": 367.6
+    },
+    {
+       "district_id": "19170",
+       "population": 66674,
+       "area": 839.4
+    },
+    {
+       "district_id": "46474",
+       "population": 354124,
+       "area": 70.7
+    },
+    {
+       "district_id": "46479",
+       "population": 101353,
+       "area": 454.7
+    },
+    {
+       "district_id": "46480",
+       "population": 116147,
+       "area": 517.1
+    },
+    {
+       "district_id": "46481",
+       "population": 47115,
+       "area": 1225.2
+    },
+    {
+       "district_id": "46483",
+       "population": 25871,
+       "area": 647.8
+    },
+    {
+       "district_id": "46476",
+       "population": 92938,
+       "area": 948.2
+    },
+    {
+       "district_id": "46482",
+       "population": 138123,
+       "area": 720.4
+    },
+    {
+       "district_id": "46478",
+       "population": 182141,
+       "area": 278.2
+    },
+    {
+       "district_id": "46477",
+       "population": 85760,
+       "area": 163.1
+    },
+    {
+       "district_id": "38380",
+       "population": 350035,
+       "area": 145.4
+    },
+    {
+       "district_id": "38381",
+       "population": 57632,
+       "area": 63.9
+    },
+    {
+       "district_id": "38382",
+       "population": 57043,
+       "area": 17.6
+    },
+    {
+       "district_id": "38386",
+       "population": 100145,
+       "area": 777.6
+    },
+    {
+       "district_id": "38390",
+       "population": 104438,
+       "area": 424.5
+    },
+    {
+       "district_id": "38405",
+       "population": 76406,
+       "area": 82.9
+    },
+    {
+       "district_id": "38392",
+       "population": 110237,
+       "area": 243.8
+    },
+    {
+       "district_id": "38400",
+       "population": 168268,
+       "area": 143.7
+    },
+    {
+       "district_id": "38399",
+       "population": 224014,
+       "area": 203.8
+    },
+    {
+       "district_id": "38388",
+       "population": 47318,
+       "area": 585.6
+    },
+    {
+       "district_id": "38384",
+       "population": 35937,
+       "area": 812.4
+    },
+    {
+       "district_id": "38401",
+       "population": 136120,
+       "area": 157.8
+    },
+    {
+       "district_id": "38389",
+       "population": 133106,
+       "area": 491
+    },
+    {
+       "district_id": "38403",
+       "population": 88025,
+       "area": 588.1
+    },
+    {
+       "district_id": "38402",
+       "population": 66729,
+       "area": 721.7
+    },
+    {
+       "district_id": "38404",
+       "population": 183177,
+       "area": 285.1
+    },
+    {
+       "district_id": "38385",
+       "population": 46253,
+       "area": 990.7
+    },
+    {
+       "district_id": "82815",
+       "population": 226258,
+       "area": 82.3
+    },
+    {
+       "district_id": "82817",
+       "population": 123861,
+       "area": 141
+    },
+    {
+       "district_id": "82816",
+       "population": 97397,
+       "area": 101.7
+    },
+    {
+       "district_id": "82819",
+       "population": 294348,
+       "area": 416.4
+    },
+    {
+       "district_id": "38387",
+       "population": 37139,
+       "area": 926.6
+    },
+    {
+       "district_id": "38406",
+       "population": 222303,
+       "area": 201.6
+    },
+    {
+       "district_id": "38391",
+       "population": 140358,
+       "area": 559.2
+    },
+    {
+       "district_id": "38398",
+       "population": 157074,
+       "area": 159.9
+    },
+    {
+       "district_id": "38395",
+       "population": 217053,
+       "area": 292.3
+    },
+    {
+       "district_id": "38396",
+       "population": 86520,
+       "area": 1107.2
+    },
+    {
+       "district_id": "38407",
+       "population": 224566,
+       "area": 455.6
+    },
+    {
+       "district_id": "38397",
+       "population": 200307,
+       "area": 290.1
+    },
+    {
+       "district_id": "38393",
+       "population": 82463,
+       "area": 157.7
+    },
+    {
+       "district_id": "38394",
+       "population": 161507,
+       "area": 228.8
+    },
+    {
+       "district_id": "68672",
+       "population": 220151,
+       "area": 394.5
+    },
+    {
+       "district_id": "68673",
+       "population": 158041,
+       "area": 233.2
+    },
+    {
+       "district_id": "68680",
+       "population": 117399,
+       "area": 1463.4
+    },
+    {
+       "district_id": "68683",
+       "population": 39438,
+       "area": 426.9
+    },
+    {
+       "district_id": "68681",
+       "population": 36003,
+       "area": 495.6
+    },
+    {
+       "district_id": "68682",
+       "population": 47015,
+       "area": 527
+    },
+    {
+       "district_id": "82820",
+       "population": 190884,
+       "area": 294.8
+    },
+    {
+       "district_id": "82821",
+       "population": 245519,
+       "area": 232.6
+    },
+    {
+       "district_id": "68674",
+       "population": 43854,
+       "area": 872.1
+    },
+    {
+       "district_id": "68679",
+       "population": 164719,
+       "area": 1614.2
+    },
+    {
+       "district_id": "68677",
+       "population": 100390,
+       "area": 611.4
+    },
+    {
+       "district_id": "68678",
+       "population": 178174,
+       "area": 903.6
+    },
+    {
+       "district_id": "68675",
+       "population": 21402,
+       "area": 1311.4
+    },
+    {
+       "district_id": "68676",
+       "population": 146502,
+       "area": 930.2
+    },
+    {
+       "district_id": "82822",
+       "population": 178048,
+       "area": 230.9
+    },
+    {
+       "district_id": "82824",
+       "population": 143648,
+       "area": 273.2
+    },
+    {
+       "district_id": "82823",
+       "population": 127507,
+       "area": 184.5
+    },
+    {
+       "district_id": "82825",
+       "population": 41563,
+       "area": 223.1
+    },
+    {
+       "district_id": "82818",
+       "population": 59646,
+       "area": 330.1
+    },
+    {
+       "district_id": "85855",
+       "population": 142001,
+       "area": 47.8
+    },
+    {
+       "district_id": "85861",
+       "population": 89397,
+       "area": 93.6
+    },
+    {
+       "district_id": "85863",
+       "population": 95487,
+       "area": 158.1
+    },
+    {
+       "district_id": "85857",
+       "population": 163643,
+       "area": 196.3
+    },
+    {
+       "district_id": "85858",
+       "population": 100590,
+       "area": 162.5
+    },
+    {
+       "district_id": "85860",
+       "population": 155823,
+       "area": 290.7
+    },
+    {
+       "district_id": "08070",
+       "population": 93223,
+       "area": 119.2
+    },
+    {
+       "district_id": "08073",
+       "population": 127603,
+       "area": 1278.8
+    },
+    {
+       "district_id": "08074",
+       "population": 113047,
+       "area": 900.6
+    },
+    {
+       "district_id": "08071",
+       "population": 30663,
+       "area": 785
+    },
+    {
+       "district_id": "08072",
+       "population": 43208,
+       "area": 863.5
+    },
+    {
+       "district_id": "08076",
+       "population": 176410,
+       "area": 787.8
+    },
+    {
+       "district_id": "08075",
+       "population": 163053,
+       "area": 1132.4
+    },
+    {
+       "district_id": "84842",
+       "population": 107500,
+       "area": 67.9
+    },
+    {
+       "district_id": "84851",
+       "population": 45400,
+       "area": 175.1
+    },
+    {
+       "district_id": "84844",
+       "population": 145400,
+       "area": 293.9
+    },
+    {
+       "district_id": "84845",
+       "population": 111100,
+       "area": 246.6
+    },
+    {
+       "district_id": "84848",
+       "population": 134400,
+       "area": 328.4
+    },
+    {
+       "district_id": "84847",
+       "population": 139700,
+       "area": 343.1
+    },
+    {
+       "district_id": "84850",
+       "population": 84800,
+       "area": 305.4
+    },
+    {
+       "district_id": "84846",
+       "population": 111300,
+       "area": 227.2
+    },
+    {
+       "district_id": "84849",
+       "population": 154900,
+       "area": 317.5
+    },
+    {
+       "district_id": "85862",
+       "population": 136492,
+       "area": 267.2
+    },
+    {
+       "district_id": "85859",
+       "population": 161604,
+       "area": 309.6
+    },
+    {
+       "district_id": "26243",
+       "population": 102602,
+       "area": 50.4
+    },
+    {
+       "district_id": "26244",
+       "population": 97548,
+       "area": 119.5
+    },
+    {
+       "district_id": "26249",
+       "population": 115467,
+       "area": 148.5
+    },
+    {
+       "district_id": "26246",
+       "population": 123376,
+       "area": 172.2
+    },
+    {
+       "district_id": "26253",
+       "population": 92373,
+       "area": 149.9
+    },
+    {
+       "district_id": "26248",
+       "population": 72446,
+       "area": 234.7
+    },
+    {
+       "district_id": "26247",
+       "population": 99491,
+       "area": 108.3
+    },
+    {
+       "district_id": "26252",
+       "population": 199242,
+       "area": 144
+    },
+    {
+       "district_id": "26251",
+       "population": 151947,
+       "area": 107.7
+    },
+    {
+       "district_id": "51522",
+       "population": 249840,
+       "area": 156.9
+    },
+    {
+       "district_id": "51535",
+       "population": 53370,
+       "area": 1137.6
+    },
+    {
+       "district_id": "51524",
+       "population": 178689,
+       "area": 466.2
+    },
+    {
+       "district_id": "51536",
+       "population": 19295,
+       "area": 10.4
+    },
+    {
+       "district_id": "51534",
+       "population": 144272,
+       "area": 372.9
+    },
+    {
+       "district_id": "51531",
+       "population": 16779,
+       "area": 217.2
+    },
+    {
+       "district_id": "51533",
+       "population": 127809,
+       "area": 214
+    },
+    {
+       "district_id": "51532",
+       "population": 91112,
+       "area": 234.4
+    },
+    {
+       "district_id": "51529",
+       "population": 70933,
+       "area": 752.1
+    },
+    {
+       "district_id": "51530",
+       "population": 18621,
+       "area": 381.5
+    },
+    {
+       "district_id": "51527",
+       "population": 96777,
+       "area": 243.1
+    },
+    {
+       "district_id": "51526",
+       "population": 18818,
+       "area": 338.5
+    },
+    {
+       "district_id": "51525",
+       "population": 34494,
+       "area": 421.5
+    },
+    {
+       "district_id": "51528",
+       "population": 129835,
+       "area": 206.3
+    },
+    {
+       "district_id": "15132",
+       "population": 99850,
+       "area": 106.8
+    },
+    {
+       "district_id": "15133",
+       "population": 29930,
+       "area": 30.3
+    },
+    {
+       "district_id": "15135",
+       "population": 107750,
+       "area": 810
+    },
+    {
+       "district_id": "15137",
+       "population": 56370,
+       "area": 1197.9
+    },
+    {
+       "district_id": "15139",
+       "population": 30820,
+       "area": 743.4
+    },
+    {
+       "district_id": "15138",
+       "population": 83500,
+       "area": 629.1
+    },
+    {
+       "district_id": "15140",
+       "population": 152380,
+       "area": 1207.4
+    },
+    {
+       "district_id": "15136",
+       "population": 123070,
+       "area": 1390.3
+    },
+    {
+       "district_id": "15141",
+       "population": 109040,
+       "area": 772.4
+    },
+    {
+       "district_id": "02024",
+       "population": 54240,
+       "area": 133.5
+    },
+    {
+       "district_id": "02031",
+       "population": 54043,
+       "area": 856.1
+    },
+    {
+       "district_id": "02034",
+       "population": 110830,
+       "area": 1105.6
+    },
+    {
+       "district_id": "02026",
+       "population": 73895,
+       "area": 451.7
+    },
+    {
+       "district_id": "02032",
+       "population": 64991,
+       "area": 632.4
+    },
+    {
+       "district_id": "02027",
+       "population": 79012,
+       "area": 574.2
+    },
+    {
+       "district_id": "02029",
+       "population": 50204,
+       "area": 542.2
+    },
+    {
+       "district_id": "02035",
+       "population": 62302,
+       "area": 791.8
+    },
+    {
+       "district_id": "02030",
+       "population": 105512,
+       "area": 1478.4
+    },
+    {
+       "district_id": "02033",
+       "population": 63841,
+       "area": 587
+    },
+    {
+       "district_id": "02028",
+       "population": 87832,
+       "area": 776.6
+    },
+    {
+       "district_id": "45461",
+       "population": 88414,
+       "area": 73
+    },
+    {
+       "district_id": "45462",
+       "population": 23537,
+       "area": 72.9
+    },
+    {
+       "district_id": "45468",
+       "population": 45433,
+       "area": 344.5
+    },
+    {
+       "district_id": "45471",
+       "population": 248,
+       "area": 2.3
+    },
+    {
+       "district_id": "45467",
+       "population": 38560,
+       "area": 1224.5
+    },
+    {
+       "district_id": "45466",
+       "population": 73888,
+       "area": 473.8
+    },
+    {
+       "district_id": "45470",
+       "population": 87275,
+       "area": 425.1
+    },
+    {
+       "district_id": "45465",
+       "population": 80604,
+       "area": 1152.8
+    },
+    {
+       "district_id": "45469",
+       "population": 95467,
+       "area": 353.8
+    },
+    {
+       "district_id": "45464",
+       "population": 86984,
+       "area": 617.2
+    },
+    {
+       "district_id": "87866",
+       "population": 163597,
+       "area": 107
+    },
+    {
+       "district_id": "87867",
+       "population": 104818,
+       "area": 60
+    },
+    {
+       "district_id": "87868",
+       "population": 78563,
+       "area": 122
+    },
+    {
+       "district_id": "87873",
+       "population": 202820,
+       "area": 491
+    },
+    {
+       "district_id": "87877",
+       "population": 152981,
+       "area": 247
+    },
+    {
+       "district_id": "87870",
+       "population": 145252,
+       "area": 210
+    },
+    {
+       "district_id": "87876",
+       "population": 161576,
+       "area": 238
+    },
+    {
+       "district_id": "87875",
+       "population": 182123,
+       "area": 246
+    },
+    {
+       "district_id": "87871",
+       "population": 105996,
+       "area": 474
+    },
+    {
+       "district_id": "87869",
+       "population": 92521,
+       "area": 311
+    },
+    {
+       "district_id": "87874",
+       "population": 156187,
+       "area": 342
+    },
+    {
+       "district_id": "87872",
+       "population": 137827,
+       "area": 530
+    }
+ ]

@@ -1,0 +1,28 @@
+{
+ 
+    "development": {
+        "username": "postgres",
+        "password": "hoanpx",
+        "database": "vn_gis",
+        "host": "127.0.0.1",
+        "port": 5432,
+        "dialect": "postgres"
+    },
+    "test": {
+        "username": "hoanpx",
+        "password": null,
+        "database": "vn_gis",
+        "host": "127.0.0.1",
+        "port": 5432,
+        "dialect": "postgres"
+    },
+    "production": {
+        "username": "hoanpx",
+        "password": null,
+        "database": "vn_gis",
+        "host": "127.0.0.1",
+        "port": 5432,
+        "dialect": "postgres"
+    }
+ 
+}

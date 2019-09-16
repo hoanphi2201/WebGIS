@@ -1,0 +1,19 @@
+<perfect-scrollbar class="side-nav" [ngClass]="{ 'border-collapse-dark': sideNavDark   }" sidenav>
+    <div>
+      <nz-sider nzTheme="light" nzCollapsible [(nzCollapsed)]="isCollapsed" >
+        <ul
+          class="side-nav-menu"
+          nz-menu
+          nzMode="inline"
+          [nzTheme]="sideNavDark ? 'dark' : 'light'"
+          [nzInlineCollapsed]="isCollapsed"
+        >
+          <li nz-menu-item [routerLink]="['/admin', 'users']" routerLinkActive="ant-menu-item-selected"  >
+            <i nz-icon nzType="user"></i>
+            <span>Quản lý người dùng</span>
+          </li>
+        </ul>
+      </nz-sider>
+    </div>
+  </perfect-scrollbar>
+  

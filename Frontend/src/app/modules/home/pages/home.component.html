@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-xl-12">
+      <nz-card>
+        <div data-role="mapcontent">
+          <app-map [height]="height" [config]="configMap" (oncomponentsetup)="onComponentSetup()"
+            (onpointermove)="onPointerMove($event)" (onclick)="onMapClick($event)"
+            (mouseout)=onMouseOut($event)>
+          </app-map>
+        </div>
+      </nz-card>
+
+    </div>
+  </div>
+<div #popup id="popup" class="ol-popup">
+  <div id="popup-content" [innerHTML]="popupContent"></div>
+</div>
+<div #popup_click id="popup" class="ol-popup">
+  <a id="popup-closer" class="ol-popup-closer1" (click)="closePopup()"></a>
+  <div id="popup-content1" [innerHTML]="popupContent1"></div>
+</div>

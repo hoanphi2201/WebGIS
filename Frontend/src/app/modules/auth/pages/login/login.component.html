@@ -1,0 +1,52 @@
+<div class="row align-items-center">
+    <div class="col-md-5">
+      <nz-card>
+        <h2 class="m-t-20 ">Đăng nhập</h2>
+        <p class="m-b-30 ">Nhập thông tin đăng nhập để có quyền truy cập</p>
+        <form (ngSubmit)="login()" [formGroup]="loginForm" novalidate class="login-form" nz-form>
+          <nz-form-item>
+            <nz-form-label nzFor="userName" nzRequired>
+              Tên đăng nhập
+            </nz-form-label>
+            <nz-form-control>
+              <nz-input-group [nzPrefix]="prefixUsername">
+                <input formControlName="username" type="text" nz-input placeholder="Enter your username" />
+              </nz-input-group>
+              <ng-template #prefixUsername><i nz-icon nzType="user"></i></ng-template>
+            </nz-form-control>
+          </nz-form-item>
+          <nz-form-item>
+            <nz-form-label nzFor="password" nzRequired>
+              Mật khẩu
+            </nz-form-label>
+            <a class="float-right font-size-13 p-t-10 text-muted" href="#/authentication/reset-password-1"
+              >Forget Password?</a
+            >
+            <nz-form-control>
+              <nz-input-group [nzPrefix]="prefixPassword">
+                <input formControlName="password" type="password" autocomplete="password" nz-input placeholder="Enter your password" />
+              </nz-input-group>
+              <ng-template #prefixPassword><i nz-icon nzType="lock"></i></ng-template>
+            </nz-form-control>
+          </nz-form-item>
+          <nz-form-item>
+            <nz-form-control>
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="font-size-13 text-muted">
+                  Don't have an account?
+                  <a class="small" href="#/authentication/sign-up-2"> Signup</a>
+                </span>
+                <button type="submit" class="login-form-button" [nzType]="'primary'" nz-button>
+                  Sign In
+                </button>
+              </div>
+            </nz-form-control>
+          </nz-form-item>
+        </form>
+      </nz-card>
+    </div>
+    <div class="offset-md-1 col-md-6 d-none d-md-block">
+      <img alt="" class="img-fluid" src="./assets/images/others/login-2.png" />
+    </div>
+  </div>
+  

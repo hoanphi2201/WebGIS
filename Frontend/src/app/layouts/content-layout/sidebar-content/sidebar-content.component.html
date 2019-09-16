@@ -1,0 +1,133 @@
+<div  class="side-nav" sidenav>
+  <div class="main-nav">
+    <div *ngIf="!isCollapsed">
+      <div #boxSearch class="p-2">
+        <nz-input-group [nzSuffix]="suffixIcon">
+          <input nz-input nzSize="small" type="text" nz-input placeholder="Tìm kiếm" [(ngModel)]="searchValue" />
+        </nz-input-group>
+      </div>
+      <ng-template #suffixIcon>
+        <i nz-icon type="search"></i>
+      </ng-template>
+      <div [style.height.px]="treeHeight">
+        <perfect-scrollbar>
+          <nz-tree nzShowLine [nzData]="getProvinces" nzBlockNode [nzSearchValue]="searchValue" (nzClick)="nzEvent($event)"
+            (nzExpandChange)="nzEvent($event)" (nzSearchValueChange)="nzEvent($event)">
+          </nz-tree>
+        </perfect-scrollbar>
+      </div>
+    </div>
+    <div [ngClass]="{'is-folder': isCollapsed}" #sidebar class="nav-action">
+      <ul class="nav-right">
+        <li nzTooltipTitle="Phóng to theo vùng" nzTooltipPlacement="right" nz-tooltip (click)="zoomInRect()">
+          <a [ngClass]="{'active': controlState === listStates.zoomInRect}">
+              <i nz-icon nzType="drag" nzTheme="outline"></i>
+          </a>
+        </li>
+        <li nzTooltipTitle="Phóng to" nzTooltipPlacement="right" nz-tooltip (click)="zoomIn()">
+          <a>
+            <i nz-icon nzType="zoom-in" nzTheme="outline"></i>
+          </a>
+        </li>
+        <li nzTooltipTitle="Thu nhỏ" nzTooltipPlacement="right" nz-tooltip (click)="zoomOut()">
+          <a>
+            <i nz-icon nzType="zoom-out" nzTheme="outline"></i>
+          </a>
+        </li>
+        <li nzTooltipTitle="Xem toàn cảnh" nzTooltipPlacement="right" nz-tooltip (click)="viewFullExtent()">
+          <a>
+            <i nz-icon nzType="pic-center" nzTheme="outline"></i>
+          </a>
+        </li>
+        <li *ngIf="currentUser" nzTooltipTitle="Sửa thông tin" nzTooltipPlacement="right" nz-tooltip (click)="editInfo()">
+          <a>
+            <i nz-icon nzType="info-circle" nzTheme="outline"></i>
+          </a>
+        </li>
+        <li nzTooltipTitle="Đo khoảng cách" nzTooltipPlacement="right" nz-tooltip (click)="drawLineString()">
+          <a [ngClass]="{'active': controlState === listStates.drawLineStringState}">
+            <i nz-icon nzType="column-width" nzTheme="outline"></i>
+          </a>
+        </li>
+        <li nzTooltipTitle="Đo diện tích" nzTooltipPlacement="right" nz-tooltip (click)="drawPolygon()">
+          <a [ngClass]="{'active': controlState === listStates.drawPolygonState}">
+            <i nz-icon nzType="border-outer" nzTheme="outline"></i>
+          </a>
+        </li>
+        <li (click)="showModal()">
+          <a>
+            <i nz-icon nzType="printer" nzTheme="outline"></i>
+          </a>
+        </li>
+        <li nzTooltipTitle="Làm mới bản đồ" nzTooltipPlacement="right" nz-tooltip (click)="reloadMap()">
+          <a>
+            <i nz-icon nzType="reload" nzTheme="outline"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<nz-modal [nzFooter]="modalFooter" [(nzVisible)]="isVisibleModelPrint" nzTitle="In bản đồ">
+    <div class="row">
+      <div class="col-md-6">
+          <nz-select
+          style="width: 100%;"
+          nzPlaceHolder="Chọn khổ giấy"
+          [(ngModel)]="pageSizeSelected"
+        >
+          <nz-option *ngFor="let item of pageSize" [nzLabel]="item.viewValue" [nzValue]="item.value"></nz-option>
+        </nz-select>
+      </div> 
+      <div class="col-md-6">
+          <nz-select
+          style="width: 100%;"
+          nzAllowClear
+          nzPlaceHolder="Chọn độ phân giải"
+          [(ngModel)]="resolutionSelected"
+        >
+          <nz-option *ngFor="let item of resolution" [nzLabel]="item.viewValue" [nzValue]="item.value"></nz-option>
+        </nz-select>
+      </div> 
+    </div>
+    <ng-template #modalFooter>
+        <button nz-button nzType="default" (click)="handleCancel()">Cancel</button>
+        <button [disabled]="!pageSizeSelected || !resolutionSelected" nz-button nzType="primary" [nzLoading]="printingMap" (click)="handleOk()">Print</button>
+      </ng-template>
+  </nz-modal>
+
+  <nz-drawer  [nzBodyStyle]="{ height: 'calc(100% - 55px)', overflow: 'auto', 'padding-bottom': '53px' }"
+  [nzMaskClosable]="false" [nzVisible]="isVisibleForm" nzTitle="Chỉnh sửa thông tin" (nzOnClose)="closeForm()">
+  <form #formDirective="ngForm" [formGroup]="form" nz-form>
+    <ng-container *ngIf="selectedEdit">
+        <div  nz-row>
+            <div nz-col nzSpan="24">Mã DVHC: {{selectedEdit.province ? selectedEdit.province.id : selectedEdit.district.id }} </div>
+            <div nz-col nzSpan="24">Tên DVHC: {{selectedEdit.province ? selectedEdit.province.name : selectedEdit.district.name }} </div>
+          </div>
+          <div  nz-row>
+            <div nz-col nzSpan="24">
+              <nz-form-item>
+                <nz-form-label>Diện tích (km<sup>2</sup>)</nz-form-label>
+                <nz-form-control>
+                  <input type="number"  nz-input [(ngModel)]="selectedEdit.area" formControlName="area" placeholder="Nhập diện tích" />
+                </nz-form-control>
+              </nz-form-item>
+            </div>
+          </div>
+          <div   nz-row>
+            <div nz-col nzSpan="24">
+              <nz-form-item>
+                <nz-form-label>Dân số (người)</nz-form-label>
+                <nz-form-control>
+                  <input type="number" [(ngModel)]="selectedEdit.population" formControlName="population" nz-input placeholder="Nhập dân số" />
+                </nz-form-control>
+              </nz-form-item>
+            </div>
+          </div>
+    </ng-container>
+  </form>
+  <div class="footer">
+    <button type="button" (click)="closeForm()" class="ant-btn" style="margin-right: 8px;"><span>Cancel</span></button>
+    <button type="button" (click)="onEditInfo(form, formDirective)" class="ant-btn ant-btn-primary"><span>Submit</span></button>
+  </div>
+</nz-drawer>

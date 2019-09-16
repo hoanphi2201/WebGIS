@@ -1,0 +1,23 @@
+{
+  "APP_NAME": "SNS data analysis system",
+  "About": "Về chúng tôi",
+  "Hello world !": "Xin Chào!",
+  "Home": "Trang chủ",
+  "Logged in as": "Đăng nhập với",
+  "Login": "Đăng nhập",
+  "Logout": "Đăng xuất",
+  "Password": "Mật khẩu",
+  "Password is required": "Mot de passe requis",
+  "Username": "Tên đăng nhập",
+  "Username is required": "Identifiant requis",
+  "Username or password incorrect.": "Identifiant ou mot de passe incorrect.",
+  "Remember me": "Lưu lần sau",
+  "Version": "Phiên bản",
+  "Log Out": "Đăng xuất",
+  "Dashboard": "Trang chủ",
+  "TweetSearch": "Tìm kiếm tweet",
+  "Statistics": "Thống kê",
+  "Maintenance": "Bảo trì",
+  "SNS Infomation Analysis System": "Hệ thống phân tích thông tin SNS",
+  "type to search": "Tìm kiếm"
+}

@@ -1,0 +1,24 @@
+.logo-fold {
+    margin-left: auto;
+    margin-right: auto;
+}
+.custom-active {
+    border-bottom: 2px solid #1890ff;
+}
+.menu-item {
+    padding: 0 20px;
+    outline: none;
+}
+.menu-item a {
+    padding: 0px!important;
+    line-height:  69px;
+    display: block;
+    font-size: 14px!important;  
+}
+.menu-item a:hover{
+    background-color: transparent!important;
+    color: #505659!important;
+}
+.menu-item:hover {
+    border-bottom: 2px solid #1890ff;
+}
